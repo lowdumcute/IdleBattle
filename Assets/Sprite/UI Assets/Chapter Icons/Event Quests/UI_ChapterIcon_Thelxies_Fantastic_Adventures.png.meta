@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: c1268000250324d49bb36030f4fb45df
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6847200117119098172
+    second: UI_ChapterIcon_Thelxies_Fantastic_Adventures_0
+  - first:
+      213: 1343977812488655207
+    second: UI_ChapterIcon_Thelxies_Fantastic_Adventures_1
+  - first:
+      213: 6078151562124015756
+    second: UI_ChapterIcon_Thelxies_Fantastic_Adventures_2
+  - first:
+      213: -1538044468116538783
+    second: UI_ChapterIcon_Thelxies_Fantastic_Adventures_3
+  - first:
+      213: 3825201228439195351
+    second: UI_ChapterIcon_Thelxies_Fantastic_Adventures_4
+  - first:
+      213: -4025150173608083831
+    second: UI_ChapterIcon_Thelxies_Fantastic_Adventures_5
+  - first:
+      213: 3323273768579080866
+    second: UI_ChapterIcon_Thelxies_Fantastic_Adventures_6
+  - first:
+      213: 4894584216230246736
+    second: UI_ChapterIcon_Thelxies_Fantastic_Adventures_7
+  - first:
+      213: 6446395166048754308
+    second: UI_ChapterIcon_Thelxies_Fantastic_Adventures_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_ChapterIcon_Thelxies_Fantastic_Adventures_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 163
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d95ee7a34260f50800000000000000
+      internalID: 6847200117119098172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_ChapterIcon_Thelxies_Fantastic_Adventures_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 214
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761946323b4c6a210800000000000000
+      internalID: 1343977812488655207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_ChapterIcon_Thelxies_Fantastic_Adventures_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 195
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88336f64aee95450800000000000000
+      internalID: 6078151562124015756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_ChapterIcon_Thelxies_Fantastic_Adventures_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 179
+        width: 98
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ab82584b4c7aae0800000000000000
+      internalID: -1538044468116538783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_ChapterIcon_Thelxies_Fantastic_Adventures_4
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 31
+        width: 202
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de818f1048d51530800000000000000
+      internalID: 3825201228439195351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_ChapterIcon_Thelxies_Fantastic_Adventures_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 193
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98efc764e3bc328c0800000000000000
+      internalID: -4025150173608083831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_ChapterIcon_Thelxies_Fantastic_Adventures_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 198
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2a78392e3ae1e20800000000000000
+      internalID: 3323273768579080866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_ChapterIcon_Thelxies_Fantastic_Adventures_7
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 95
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05933ab796e0de340800000000000000
+      internalID: 4894584216230246736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_ChapterIcon_Thelxies_Fantastic_Adventures_8
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 67
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a9122cf32367950800000000000000
+      internalID: 6446395166048754308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      UI_ChapterIcon_Thelxies_Fantastic_Adventures_0: 6847200117119098172
+      UI_ChapterIcon_Thelxies_Fantastic_Adventures_1: 1343977812488655207
+      UI_ChapterIcon_Thelxies_Fantastic_Adventures_2: 6078151562124015756
+      UI_ChapterIcon_Thelxies_Fantastic_Adventures_3: -1538044468116538783
+      UI_ChapterIcon_Thelxies_Fantastic_Adventures_4: 3825201228439195351
+      UI_ChapterIcon_Thelxies_Fantastic_Adventures_5: -4025150173608083831
+      UI_ChapterIcon_Thelxies_Fantastic_Adventures_6: 3323273768579080866
+      UI_ChapterIcon_Thelxies_Fantastic_Adventures_7: 4894584216230246736
+      UI_ChapterIcon_Thelxies_Fantastic_Adventures_8: 6446395166048754308
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

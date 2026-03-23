@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: cf9a27467fdc60543a377e93a9dfa143
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1708046611777028189
+    second: Tartaglia_Effects_0
+  - first:
+      213: 3202914385657130211
+    second: Tartaglia_Effects_1
+  - first:
+      213: 4790527777002219252
+    second: Tartaglia_Effects_2
+  - first:
+      213: 5934705546299235854
+    second: Tartaglia_Effects_3
+  - first:
+      213: -9000157960406524846
+    second: Tartaglia_Effects_4
+  - first:
+      213: -3944385010797544645
+    second: Tartaglia_Effects_5
+  - first:
+      213: 3093212609234084638
+    second: Tartaglia_Effects_6
+  - first:
+      213: -3883504971826231672
+    second: Tartaglia_Effects_7
+  - first:
+      213: 5226745533166540887
+    second: Tartaglia_Effects_8
+  - first:
+      213: 6102370117963250570
+    second: Tartaglia_Effects_9
+  - first:
+      213: -2469516544404218876
+    second: Tartaglia_Effects_10
+  - first:
+      213: -4793065523529670754
+    second: Tartaglia_Effects_11
+  - first:
+      213: -8216327366548969348
+    second: Tartaglia_Effects_12
+  - first:
+      213: 6044370587582470573
+    second: Tartaglia_Effects_13
+  - first:
+      213: 3042370473075306588
+    second: Tartaglia_Effects_14
+  - first:
+      213: -5262903263244808879
+    second: Tartaglia_Effects_15
+  - first:
+      213: -3309028147975191412
+    second: Tartaglia_Effects_16
+  - first:
+      213: -8813377506799178134
+    second: Tartaglia_Effects_17
+  - first:
+      213: -5498257163975042634
+    second: Tartaglia_Effects_18
+  - first:
+      213: 4492379961503018664
+    second: Tartaglia_Effects_19
+  - first:
+      213: 5747311464935841258
+    second: Tartaglia_Effects_20
+  - first:
+      213: 7978533577591701576
+    second: Tartaglia_Effects_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tartaglia_Effects_0
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 0
+        width: 593
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af783df7accb48e0800000000000000
+      internalID: -1708046611777028189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_1
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 423
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ece41bf9a9037c20800000000000000
+      internalID: 3202914385657130211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_2
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 287
+        width: 58
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6ebd2c1af5b7240800000000000000
+      internalID: 4790527777002219252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_3
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 355
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ed4bd304f4c5250800000000000000
+      internalID: 5934705546299235854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_4
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 205
+        width: 207
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c90971504091380800000000000000
+      internalID: -9000157960406524846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_5
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 323
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b790e1bbab249c0800000000000000
+      internalID: -3944385010797544645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_6
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 272
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e132824ca7c4dea20800000000000000
+      internalID: 3093212609234084638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_7
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 235
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88685d6cdc40b1ac0800000000000000
+      internalID: -3883504971826231672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_8
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 163
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75850c3be51298840800000000000000
+      internalID: 5226745533166540887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_9
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 163
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b78216a49ffa450800000000000000
+      internalID: 6102370117963250570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_10
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 111
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c16d379c38abdd0800000000000000
+      internalID: -2469516544404218876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_11
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 116
+        width: 14
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f97d41d4c9b7db0800000000000000
+      internalID: -4793065523529670754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_12
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 111
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c782786cacdb9fd80800000000000000
+      internalID: -8216327366548969348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_13
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 66
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da91ca3660be1e350800000000000000
+      internalID: 6044370587582470573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_14
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 59
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c507aca73dba83a20800000000000000
+      internalID: 3042370473075306588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_15
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d8c0bbd5966f6b0800000000000000
+      internalID: -5262903263244808879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_16
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 53
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c848b207e68f312d0800000000000000
+      internalID: -3309028147975191412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_17
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e21d35ad790b580800000000000000
+      internalID: -8813377506799178134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 51
+        width: 317
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b955898d3442b3b0800000000000000
+      internalID: -5498257163975042634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_19
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 47
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae6879f5c3285e30800000000000000
+      internalID: 4492379961503018664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_20
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 31
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedd709a35d82cf40800000000000000
+      internalID: 5747311464935841258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tartaglia_Effects_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84041e8440279be60800000000000000
+      internalID: 7978533577591701576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tartaglia_Effects_0: -1708046611777028189
+      Tartaglia_Effects_1: 3202914385657130211
+      Tartaglia_Effects_10: -2469516544404218876
+      Tartaglia_Effects_11: -4793065523529670754
+      Tartaglia_Effects_12: -8216327366548969348
+      Tartaglia_Effects_13: 6044370587582470573
+      Tartaglia_Effects_14: 3042370473075306588
+      Tartaglia_Effects_15: -5262903263244808879
+      Tartaglia_Effects_16: -3309028147975191412
+      Tartaglia_Effects_17: -8813377506799178134
+      Tartaglia_Effects_18: -5498257163975042634
+      Tartaglia_Effects_19: 4492379961503018664
+      Tartaglia_Effects_2: 4790527777002219252
+      Tartaglia_Effects_20: 5747311464935841258
+      Tartaglia_Effects_21: 7978533577591701576
+      Tartaglia_Effects_3: 5934705546299235854
+      Tartaglia_Effects_4: -9000157960406524846
+      Tartaglia_Effects_5: -3944385010797544645
+      Tartaglia_Effects_6: 3093212609234084638
+      Tartaglia_Effects_7: -3883504971826231672
+      Tartaglia_Effects_8: 5226745533166540887
+      Tartaglia_Effects_9: 6102370117963250570
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

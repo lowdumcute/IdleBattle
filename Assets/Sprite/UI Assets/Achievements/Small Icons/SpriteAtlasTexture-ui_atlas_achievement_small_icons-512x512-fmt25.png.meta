@@ -1,0 +1,1287 @@
+fileFormatVersion: 2
+guid: 695da7af0e9f95f4980f23c19477909e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2190527269254663868
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_0
+  - first:
+      213: 7487779481219697708
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_1
+  - first:
+      213: 704903721784490767
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_2
+  - first:
+      213: -2118152208719315172
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_3
+  - first:
+      213: 1805700296863372736
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_4
+  - first:
+      213: -5137578103581545103
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_5
+  - first:
+      213: 8201411013440122815
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_6
+  - first:
+      213: -9105278913115786741
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_7
+  - first:
+      213: -1583643136886950495
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_8
+  - first:
+      213: -7799548391869346770
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_9
+  - first:
+      213: -8861491468329296233
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_10
+  - first:
+      213: -4316600698647211021
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_11
+  - first:
+      213: -6477582793319863499
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_12
+  - first:
+      213: -340676408151327455
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_13
+  - first:
+      213: 6990755973295596021
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_14
+  - first:
+      213: -9069751386399930790
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_15
+  - first:
+      213: -5889217759277582389
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_16
+  - first:
+      213: -8220248352136356856
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_17
+  - first:
+      213: -5517363608481455582
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_18
+  - first:
+      213: -8445297284678594089
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_19
+  - first:
+      213: 8150781051060783550
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_20
+  - first:
+      213: 254847600088661825
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_21
+  - first:
+      213: -7068725745342618453
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_22
+  - first:
+      213: 2983776234353798562
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_23
+  - first:
+      213: 6117974967452804254
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_24
+  - first:
+      213: -7710289128673079834
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_25
+  - first:
+      213: 5570395229095946598
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_26
+  - first:
+      213: -198176402326364265
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_27
+  - first:
+      213: 9102105128441243055
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_28
+  - first:
+      213: -4526354862962223667
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_29
+  - first:
+      213: 9143147042019868262
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_30
+  - first:
+      213: -7757978489768490870
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_31
+  - first:
+      213: -6044091808108368911
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_32
+  - first:
+      213: 8695960939426668782
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_33
+  - first:
+      213: 16063170972437683
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_34
+  - first:
+      213: 5020708960478399505
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_35
+  - first:
+      213: -15796086037677371
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_36
+  - first:
+      213: 4488321099367841925
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_37
+  - first:
+      213: 1615704377468665969
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_38
+  - first:
+      213: -3844999784957137602
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_39
+  - first:
+      213: 5747737713391038445
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_40
+  - first:
+      213: 6187125927648488762
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_41
+  - first:
+      213: 4248816745009391697
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_42
+  - first:
+      213: -4921946530621846005
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_43
+  - first:
+      213: 5508634147721976972
+    second: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 325
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe0bba02f0566e10800000000000000
+      internalID: 2190527269254663868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 319
+        width: 49
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c0f8624cfe9e760800000000000000
+      internalID: 7487779481219697708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 323
+        width: 63
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0bb0d1433258c900800000000000000
+      internalID: 704903721784490767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 375
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f7313e9cfca92e0800000000000000
+      internalID: -2118152208719315172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 261
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5db5d5ad22f0910800000000000000
+      internalID: 1805700296863372736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_5
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 259
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d62325fe7a3b8b0800000000000000
+      internalID: -5137578103581545103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_6
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 262
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf23112dd341d170800000000000000
+      internalID: 8201411013440122815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_7
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 259
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02f0e2021d83a180800000000000000
+      internalID: -9105278913115786741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 183
+        width: 52
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a53ede15f4c50ae0800000000000000
+      internalID: -1583643136886950495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_9
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 247
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c8826bf0072c390800000000000000
+      internalID: -7799548391869346770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_10
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 191
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ed312b578a50580800000000000000
+      internalID: -8861491468329296233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_11
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 191
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f31eefe88a5814c0800000000000000
+      internalID: -4316600698647211021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 191
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53bacf8e4c00b16a0800000000000000
+      internalID: -6477582793319863499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_13
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 190
+        width: 61
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12db8cc9c9ca54bf0800000000000000
+      internalID: -340676408151327455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 197
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f169b3e487240160800000000000000
+      internalID: 6990755973295596021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_15
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 195
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56868cea25c12280800000000000000
+      internalID: -9069751386399930790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_16
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 195
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7765d76ab454ea0800000000000000
+      internalID: -5889217759277582389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_17
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 198
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c1c6d2dafcbed80800000000000000
+      internalID: -8220248352136356856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 129
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222abc3c7036e63b0800000000000000
+      internalID: -5517363608481455582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1592c5dd64cca80800000000000000
+      internalID: -8445297284678594089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_20
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 130
+        width: 50
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb986766e246d1170800000000000000
+      internalID: 8150781051060783550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_21
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 63
+        width: 60
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f3523ca86698300800000000000000
+      internalID: 254847600088661825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_22
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 131
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4e136e267d6ed90800000000000000
+      internalID: -7068725745342618453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_23
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 54
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad29e92da0886920800000000000000
+      internalID: 2983776234353798562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_24
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 127
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94a1c781d967e450800000000000000
+      internalID: 6117974967452804254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_25
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 127
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed82e963ec8ff490800000000000000
+      internalID: -7710289128673079834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_26
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 127
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6696bc892f40e4d40800000000000000
+      internalID: 5570395229095946598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_27
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 127
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fd870bc9fef3df0800000000000000
+      internalID: -198176402326364265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_28
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 126
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa56009a36c215e70800000000000000
+      internalID: 9102105128441243055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_29
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 63
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc556c9db382f21c0800000000000000
+      internalID: -4526354862962223667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_30
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 115
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ef1c0dacbf2ee70800000000000000
+      internalID: 9143147042019868262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_31
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 63
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a884a36caaf165490800000000000000
+      internalID: -7757978489768490870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_32
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 63
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb2ad306821f1ca0800000000000000
+      internalID: -6044091808108368911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_33
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 63
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0e237b6624ea870800000000000000
+      internalID: 8695960939426668782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_34
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 123
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc47cf6e51193000800000000000000
+      internalID: 16063170972437683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_35
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 62
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c8fedd2342da540800000000000000
+      internalID: 5020708960478399505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_36
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 62
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5caf1ee1b81e7cff0800000000000000
+      internalID: -15796086037677371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58006bd7248b94e30800000000000000
+      internalID: 4488321099367841925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_38
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170401922922c6610800000000000000
+      internalID: 1615704377468665969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_39
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 0
+        width: 54
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d2d283111d3aac0800000000000000
+      internalID: -3844999784957137602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_40
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defe9cc5ff014cf40800000000000000
+      internalID: 5747737713391038445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_41
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3de81a10461dd550800000000000000
+      internalID: 6187125927648488762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_42
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15824028154d6fa30800000000000000
+      internalID: 4248816745009391697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_43
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e81de35bbb1bbb0800000000000000
+      internalID: -4921946530621846005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_44
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 0
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c1e844299927c40800000000000000
+      internalID: 5508634147721976972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_0: 2190527269254663868
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_1: 7487779481219697708
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_10: -8861491468329296233
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_11: -4316600698647211021
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_12: -6477582793319863499
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_13: -340676408151327455
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_14: 6990755973295596021
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_15: -9069751386399930790
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_16: -5889217759277582389
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_17: -8220248352136356856
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_18: -5517363608481455582
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_19: -8445297284678594089
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_2: 704903721784490767
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_20: 8150781051060783550
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_21: 254847600088661825
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_22: -7068725745342618453
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_23: 2983776234353798562
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_24: 6117974967452804254
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_25: -7710289128673079834
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_26: 5570395229095946598
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_27: -198176402326364265
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_28: 9102105128441243055
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_29: -4526354862962223667
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_3: -2118152208719315172
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_30: 9143147042019868262
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_31: -7757978489768490870
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_32: -6044091808108368911
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_33: 8695960939426668782
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_34: 16063170972437683
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_35: 5020708960478399505
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_36: -15796086037677371
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_37: 4488321099367841925
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_38: 1615704377468665969
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_39: -3844999784957137602
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_4: 1805700296863372736
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_40: 5747737713391038445
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_41: 6187125927648488762
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_42: 4248816745009391697
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_43: -4921946530621846005
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_44: 5508634147721976972
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_5: -5137578103581545103
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_6: 8201411013440122815
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_7: -9105278913115786741
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_8: -1583643136886950495
+      SpriteAtlasTexture-ui_atlas_achievement_small_icons-512x512-fmt25_9: -7799548391869346770
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

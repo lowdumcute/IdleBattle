@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa2544a0d9ae1b429fc2d4bd237b055, type: 3}
+  m_Name: Luci
+  m_EditorClassIdentifier: 
+  characterName: Ather
+  characterIcon: {fileID: -5076515420716799908, guid: 9b2ed0fbe0501554883b04149b779423, type: 3}
+  characterPrefab: {fileID: 7161250531022830628, guid: eea860af4a2d0e940bb2c59234afe3d1, type: 3}
+  rare:
+    rarity: 4
+  maxHealth: 100
+  maxMana: 100
+  attack: 50
+  defense: 5
+  Speed: 3.5
+  CriticalRate: 0
+  CriticalDamage: 0
+  attackType: 0
+  attackRange: 1.2
+  attackSpeed: 1
+  healthPerLevel: 10
+  manaPerLevel: 5
+  attackPerLevel: 2
+  defensePerLevel: 1

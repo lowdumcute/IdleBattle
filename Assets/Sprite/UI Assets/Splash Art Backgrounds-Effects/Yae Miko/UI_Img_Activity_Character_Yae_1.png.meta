@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 0d11919c66c69c94ca0fc56e707cbca3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 387162524417174966
+    second: UI_Img_Activity_Character_Yae_1_0
+  - first:
+      213: -5149162130216977069
+    second: UI_Img_Activity_Character_Yae_1_1
+  - first:
+      213: 4202929461003726551
+    second: UI_Img_Activity_Character_Yae_1_2
+  - first:
+      213: -4939575315768330537
+    second: UI_Img_Activity_Character_Yae_1_3
+  - first:
+      213: -7817852560400122785
+    second: UI_Img_Activity_Character_Yae_1_4
+  - first:
+      213: -7252611844090847762
+    second: UI_Img_Activity_Character_Yae_1_5
+  - first:
+      213: 7068636700572136664
+    second: UI_Img_Activity_Character_Yae_1_6
+  - first:
+      213: 8540103616372092820
+    second: UI_Img_Activity_Character_Yae_1_7
+  - first:
+      213: 1565793505727799524
+    second: UI_Img_Activity_Character_Yae_1_8
+  - first:
+      213: -5369570548801278207
+    second: UI_Img_Activity_Character_Yae_1_9
+  - first:
+      213: -5573356996968530678
+    second: UI_Img_Activity_Character_Yae_1_10
+  - first:
+      213: 3782775523450043786
+    second: UI_Img_Activity_Character_Yae_1_11
+  - first:
+      213: -2682002205498541611
+    second: UI_Img_Activity_Character_Yae_1_12
+  - first:
+      213: 5715757473398546048
+    second: UI_Img_Activity_Character_Yae_1_13
+  - first:
+      213: 319380587573140022
+    second: UI_Img_Activity_Character_Yae_1_14
+  - first:
+      213: -7916014691713474912
+    second: UI_Img_Activity_Character_Yae_1_15
+  - first:
+      213: 3562315808550772894
+    second: UI_Img_Activity_Character_Yae_1_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_0
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 943
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bdaa32c34a7f5500800000000000000
+      internalID: 387162524417174966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 787
+        width: 242
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35df581f2508a88b0800000000000000
+      internalID: -5149162130216977069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 663
+        width: 149
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dea623a31ec35a30800000000000000
+      internalID: 4202929461003726551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_3
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 867
+        width: 35
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6375adb6a137bb0800000000000000
+      internalID: -4939575315768330537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 783
+        width: 89
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cf8fe5488618390800000000000000
+      internalID: -7817852560400122785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 851
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed9c2b24fb895b90800000000000000
+      internalID: -7252611844090847762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 483
+        width: 377
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d434efb0a7d81260800000000000000
+      internalID: 7068636700572136664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_7
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 770
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f23eeddfa848670800000000000000
+      internalID: 8540103616372092820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_8
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 667
+        width: 78
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0e484c5e0dab510800000000000000
+      internalID: 1565793505727799524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_9
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 707
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10fec4af8047b75b0800000000000000
+      internalID: -5369570548801278207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_10
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 419
+        width: 108
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0db045175577a2b0800000000000000
+      internalID: -5573356996968530678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_11
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 578
+        width: 109
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d384ceb4e1f7430800000000000000
+      internalID: 3782775523450043786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_12
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 451
+        width: 225
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9f176343d97cad0800000000000000
+      internalID: -2682002205498541611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_13
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 451
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e54308323725f40800000000000000
+      internalID: 5715757473398546048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 341
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ad376c3faae6400800000000000000
+      internalID: 319380587573140022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_15
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 0
+        width: 641
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae15a7249aa42290800000000000000
+      internalID: -7916014691713474912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Img_Activity_Character_Yae_1_16
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 171
+        width: 596
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e906d6a9a53ef6130800000000000000
+      internalID: 3562315808550772894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      UI_Img_Activity_Character_Yae_1_0: 387162524417174966
+      UI_Img_Activity_Character_Yae_1_1: -5149162130216977069
+      UI_Img_Activity_Character_Yae_1_10: -5573356996968530678
+      UI_Img_Activity_Character_Yae_1_11: 3782775523450043786
+      UI_Img_Activity_Character_Yae_1_12: -2682002205498541611
+      UI_Img_Activity_Character_Yae_1_13: 5715757473398546048
+      UI_Img_Activity_Character_Yae_1_14: 319380587573140022
+      UI_Img_Activity_Character_Yae_1_15: -7916014691713474912
+      UI_Img_Activity_Character_Yae_1_16: 3562315808550772894
+      UI_Img_Activity_Character_Yae_1_2: 4202929461003726551
+      UI_Img_Activity_Character_Yae_1_3: -4939575315768330537
+      UI_Img_Activity_Character_Yae_1_4: -7817852560400122785
+      UI_Img_Activity_Character_Yae_1_5: -7252611844090847762
+      UI_Img_Activity_Character_Yae_1_6: 7068636700572136664
+      UI_Img_Activity_Character_Yae_1_7: 8540103616372092820
+      UI_Img_Activity_Character_Yae_1_8: 1565793505727799524
+      UI_Img_Activity_Character_Yae_1_9: -5369570548801278207
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 161c600ade6d9a641825e0605604c01d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1869141090470142348
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_0
+  - first:
+      213: 6129716465653854879
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_1
+  - first:
+      213: -1597332060259807999
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_2
+  - first:
+      213: 786295320789620773
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_3
+  - first:
+      213: -724638189751359265
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_4
+  - first:
+      213: -7562722765457059378
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_5
+  - first:
+      213: 7694627231935696736
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_6
+  - first:
+      213: 935583615182674577
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_7
+  - first:
+      213: -467845751714150173
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_8
+  - first:
+      213: -1751962311012520863
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_9
+  - first:
+      213: -8437605861702303873
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_10
+  - first:
+      213: 8036054778654021098
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_11
+  - first:
+      213: -1782782463910432964
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_12
+  - first:
+      213: -3320993503412565238
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_13
+  - first:
+      213: -12727470240698689
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_14
+  - first:
+      213: -6186342540443052389
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_15
+  - first:
+      213: -6483667808119238205
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_16
+  - first:
+      213: 2353215305741503797
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_17
+  - first:
+      213: -7300010776028845326
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_18
+  - first:
+      213: 5680385082381740199
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_19
+  - first:
+      213: -8765397581755465444
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_20
+  - first:
+      213: 294912351179504625
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_21
+  - first:
+      213: 6854985762429335068
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_22
+  - first:
+      213: 7582825807803395834
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_23
+  - first:
+      213: 5084487823708073766
+    second: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c812f8c2be580f910800000000000000
+      internalID: 1869141090470142348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 207
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92392d16a0211550800000000000000
+      internalID: 6129716465653854879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 187
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d0fd744f225d9e0800000000000000
+      internalID: -1597332060259807999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_3
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 182
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5289734ad6b79ea00800000000000000
+      internalID: 786295320789620773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 163
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8203dd76191f5f0800000000000000
+      internalID: -724638189751359265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_5
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 159
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec11c2eb6bfcb0790800000000000000
+      internalID: -7562722765457059378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 159
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f039613bec8ca60800000000000000
+      internalID: 7694627231935696736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 135
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a93a0575cdbfc00800000000000000
+      internalID: 935583615182674577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_8
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 135
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8076f74c0e189f0800000000000000
+      internalID: -467845751714150173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ce9387f87cfa7e0800000000000000
+      internalID: -1751962311012520863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_10
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 115
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ffa725c2a97ea80800000000000000
+      internalID: -8437605861702303873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 110
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5d04d8e3dc58f60800000000000000
+      internalID: 8036054778654021098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_12
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 91
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3fa2de6bc84247e0800000000000000
+      internalID: -1782782463910432964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 58
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bc6b7010679e1d0800000000000000
+      internalID: -3320993503412565238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_14
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 59
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbee969ee68c2dff0800000000000000
+      internalID: -12727470240698689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_15
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 55
+        width: 55
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9611027c32b52aa0800000000000000
+      internalID: -6186342540443052389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_16
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 46
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1da6ffa726506a0800000000000000
+      internalID: -6483667808119238205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_17
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 43
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d0cba4adc48a020800000000000000
+      internalID: 2353215305741503797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fae64650e621ba90800000000000000
+      internalID: -7300010776028845326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_19
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8aacee228c4de40800000000000000
+      internalID: 5680385082381740199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_20
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 2
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11c568275d0b5680800000000000000
+      internalID: -8765397581755465444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_21
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 0
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbfdeb883db71400800000000000000
+      internalID: 294912351179504625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_22
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 0
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16f5fd4b3dc12f50800000000000000
+      internalID: 6854985762429335068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_23
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 0
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe29cb85eb9b3960800000000000000
+      internalID: 7582825807803395834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_24
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f2be4acbabf8640800000000000000
+      internalID: 5084487823708073766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_0: 1869141090470142348
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_1: 6129716465653854879
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_10: -8437605861702303873
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_11: 8036054778654021098
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_12: -1782782463910432964
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_13: -3320993503412565238
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_14: -12727470240698689
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_15: -6186342540443052389
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_16: -6483667808119238205
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_17: 2353215305741503797
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_18: -7300010776028845326
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_19: 5680385082381740199
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_2: -1597332060259807999
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_20: -8765397581755465444
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_21: 294912351179504625
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_22: 6854985762429335068
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_23: 7582825807803395834
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_24: 5084487823708073766
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_3: 786295320789620773
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_4: -724638189751359265
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_5: -7562722765457059378
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_6: 7694627231935696736
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_7: 935583615182674577
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_8: -467845751714150173
+      SpriteAtlasTexture-ui_atlas_bag_tab_icons-512x256-fmt25_9: -1751962311012520863
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
