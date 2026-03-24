@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8090e403e1c933548a3d90e682f9e0ed, type: 3}
   m_Name: DataCharacter
   m_EditorClassIdentifier: 
-  dataCharacterBase:
-  - {fileID: 11400000, guid: 9f19a3d99ad6d1c42a23b00b4f93446d, type: 2}
-  - {fileID: 11400000, guid: 2870f6b056d523d48b2c5cc154200bdb, type: 2}
+  typeRealms:
+  - realm: 0
+    characterBaseStats:
+    - {fileID: 11400000, guid: 9f19a3d99ad6d1c42a23b00b4f93446d, type: 2}
+    - {fileID: 11400000, guid: a7ea3489acd02034a8e1045dcc20ea5d, type: 2}
+  - realm: 1
+    characterBaseStats: []
+  - realm: 2
+    characterBaseStats: []
+  - realm: 3
+    characterBaseStats:
+    - {fileID: 11400000, guid: 2870f6b056d523d48b2c5cc154200bdb, type: 2}
