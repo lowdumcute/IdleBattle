@@ -731,7 +731,21 @@ MonoBehaviour:
       CCriticalRate: 0
       CCriticalDamage: 0
       PowerStats: 0
-      CurrentLevel: 1
+      CurrentLevel: 10
+    star: 1
+    isLineup: 0
+  - currentStats:
+      baseStats: {fileID: 11400000, guid: a7ea3489acd02034a8e1045dcc20ea5d, type: 2}
+      CSpeed: 0
+      CAttack: 0
+      CDef: 0
+      MHealth: 0
+      MMana: 0
+      ManaBonus: 0
+      CCriticalRate: 0
+      CCriticalDamage: 0
+      PowerStats: 0
+      CurrentLevel: 10
     star: 1
     isLineup: 0
   CurrentPowerTeam: 0
@@ -776,22 +790,8 @@ MonoBehaviour:
       CCriticalRate: 0
       CCriticalDamage: 0
       PowerStats: 0
-      CurrentLevel: 100
+      CurrentLevel: 10
     star: 4
-    isLineup: 1
-  - currentStats:
-      baseStats: {fileID: 11400000, guid: a7ea3489acd02034a8e1045dcc20ea5d, type: 2}
-      CSpeed: 0
-      CAttack: 0
-      CDef: 0
-      MHealth: 0
-      MMana: 0
-      ManaBonus: 0
-      CCriticalRate: 0
-      CCriticalDamage: 0
-      PowerStats: 0
-      CurrentLevel: 20
-    star: 6
     isLineup: 1
 --- !u!1 &95748691
 GameObject:
