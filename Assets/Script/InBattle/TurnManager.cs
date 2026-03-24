@@ -88,6 +88,7 @@ public class TurnManager : MonoBehaviour
             StartTurn(turnOrder[currentTurnIndex]);
 
         CheckTeamDefeat();
+        Debug.Log("EndTurn called"); // 👈 thêm
     }
 
     // Quản lý đăng ký / xóa nhân vật

@@ -1,13 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-public enum Start
-{
-    OneStar,
-    TwoStar,
-    ThreeStar,
-    FourStar,
-    FiveStar
-}
+
 public class CharacterInventory : MonoBehaviour
 {
     public static CharacterInventory Instance;

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8090e403e1c933548a3d90e682f9e0ed, type: 3}
-  m_Name: DataCharacter
+  m_Name: DataGame
   m_EditorClassIdentifier: 
   typeRealms:
   - realm: 0
@@ -24,3 +24,12 @@ MonoBehaviour:
   - realm: 3
     characterBaseStats:
     - {fileID: 11400000, guid: 2870f6b056d523d48b2c5cc154200bdb, type: 2}
+  UIStar:
+  - starType: 0
+    ImageStar: {fileID: 8234566280965478379, guid: 469b37fb7013ea4439e421351500dbac, type: 3}
+  - starType: 1
+    ImageStar: {fileID: -3367589347820431411, guid: 469b37fb7013ea4439e421351500dbac, type: 3}
+  - starType: 2
+    ImageStar: {fileID: -5276696516671652624, guid: 469b37fb7013ea4439e421351500dbac, type: 3}
+  - starType: 3
+    ImageStar: {fileID: 5319538358381289107, guid: 469b37fb7013ea4439e421351500dbac, type: 3}

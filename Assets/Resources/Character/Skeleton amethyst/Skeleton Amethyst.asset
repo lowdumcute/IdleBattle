@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Skeleton Amethyst
   m_EditorClassIdentifier: 
   realm: 2
-  characterID: 001
+  characterID: 003
   characterName: Skeleton Amethyst
-  characterIcon: {fileID: 0}
+  characterIcon: {fileID: 2560191268572409061, guid: 2d1a664c8f19b4047ba0ac27efb2709a, type: 3}
   characterPrefab: {fileID: 4512928142428338791, guid: ac6e31d6a3403dd45b649d33720443ad, type: 3}
   rare:
     rarity: 0

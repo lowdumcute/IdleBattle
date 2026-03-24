@@ -43,6 +43,7 @@ public class CharacterManager : MonoBehaviour, ITurnActor
         if (enemies.Count == 0)
         {
             Debug.Log("No targets available.");
+            TurnManager.Instance.EndTurn(); // 👈 thêm dòng này
             yield break;
         }
 

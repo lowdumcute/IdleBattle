@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
 public class Character
 {
     public CurrentStats currentStats;
-    public Start star;
+    public int star;
     public bool isLineup;
     
 }

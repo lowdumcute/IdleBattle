@@ -275,7 +275,7 @@ MonoBehaviour:
   LevelText: {fileID: 3131838809853981343}
   NameText: {fileID: 9017303627109797229}
   uiParent: {fileID: 6089438949687873263}
-  isPlayer: 1
+  isPlayer: 0
   isDead: 0
   animator: {fileID: 0}
 --- !u!1 &648628651832973575
