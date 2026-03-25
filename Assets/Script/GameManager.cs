@@ -54,6 +54,29 @@ public class GameManager : MonoBehaviour
         character.isLineup = value;
         RefreshLineup();
     }
+    // setup enemie stage 
+    public void SetEnemyFromStage(StageData stage)
+    {
+        enemiesTeam.Clear();
+
+        foreach (var enemy in stage.enemies)
+        {
+            if (enemy == null) continue;
+
+            // clone để tránh reference chung
+            Character newEnemy = new Character();
+            newEnemy.star = enemy.star;
+            newEnemy.isLineup = false;
+
+            newEnemy.currentStats = new CurrentStats();
+            newEnemy.currentStats.baseStats = enemy.currentStats.baseStats;
+            newEnemy.currentStats.CurrentLevel = enemy.currentStats.CurrentLevel;
+
+            newEnemy.currentStats.InitializeStats();
+
+            enemiesTeam.Add(newEnemy);
+        }
+    }
 }
 
 [System.Serializable]

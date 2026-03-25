@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b7566d5335bc3469975bfbd1dc331a, type: 3}
+  m_Name: Stage1-1
+  m_EditorClassIdentifier: 
+  enemies:
+  - currentStats:
+      baseStats: {fileID: 11400000, guid: 2870f6b056d523d48b2c5cc154200bdb, type: 2}
+      CSpeed: 0
+      CAttack: 0
+      CDef: 0
+      MHealth: 0
+      MMana: 0
+      ManaBonus: 0
+      CCriticalRate: 0
+      CCriticalDamage: 0
+      PowerStats: 0
+      CurrentLevel: 10
+    star: 3
+    isLineup: 0
+  - currentStats:
+      baseStats: {fileID: 11400000, guid: 2870f6b056d523d48b2c5cc154200bdb, type: 2}
+      CSpeed: 0
+      CAttack: 0
+      CDef: 0
+      MHealth: 0
+      MMana: 0
+      ManaBonus: 0
+      CCriticalRate: 0
+      CCriticalDamage: 0
+      PowerStats: 0
+      CurrentLevel: 10
+    star: 3
+    isLineup: 0
+  - currentStats:
+      baseStats: {fileID: 11400000, guid: 2870f6b056d523d48b2c5cc154200bdb, type: 2}
+      CSpeed: 0
+      CAttack: 0
+      CDef: 0
+      MHealth: 0
+      MMana: 0
+      ManaBonus: 0
+      CCriticalRate: 0
+      CCriticalDamage: 0
+      PowerStats: 0
+      CurrentLevel: 10
+    star: 3
+    isLineup: 0
+  - currentStats:
+      baseStats: {fileID: 11400000, guid: 2870f6b056d523d48b2c5cc154200bdb, type: 2}
+      CSpeed: 0
+      CAttack: 0
+      CDef: 0
+      MHealth: 0
+      MMana: 0
+      ManaBonus: 0
+      CCriticalRate: 0
+      CCriticalDamage: 0
+      PowerStats: 0
+      CurrentLevel: 10
+    star: 3
+    isLineup: 0
+  - currentStats:
+      baseStats: {fileID: 11400000, guid: 2870f6b056d523d48b2c5cc154200bdb, type: 2}
+      CSpeed: 0
+      CAttack: 0
+      CDef: 0
+      MHealth: 0
+      MMana: 0
+      ManaBonus: 0
+      CCriticalRate: 0
+      CCriticalDamage: 0
+      PowerStats: 0
+      CurrentLevel: 10
+    star: 3
+    isLineup: 0
+  - currentStats:
+      baseStats: {fileID: 11400000, guid: 2870f6b056d523d48b2c5cc154200bdb, type: 2}
+      CSpeed: 0
+      CAttack: 0
+      CDef: 0
+      MHealth: 0
+      MMana: 0
+      ManaBonus: 0
+      CCriticalRate: 0
+      CCriticalDamage: 0
+      PowerStats: 0
+      CurrentLevel: 10
+    star: 3
+    isLineup: 0
