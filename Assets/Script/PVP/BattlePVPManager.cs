@@ -6,7 +6,7 @@ using Fusion;
 public class BattlePVPManager : NetworkBehaviour
 {
     public static BattlePVPManager Instance;
-
+    public NetworkObject turnPVPManagerPrefab;
     public List<Transform> Player1SpawnPoints;
     public List<Transform> Player2SpawnPoints;
 
@@ -57,48 +57,69 @@ public class BattlePVPManager : NetworkBehaviour
 
         var players = new List<PlayerRef>(playerLineups.Keys);
 
+        // 🔥 spawn Turn Manager TRƯỚC
+        NetworkObject turnObj = Runner.Spawn(turnPVPManagerPrefab, Vector3.zero, Quaternion.identity);
+
+        // 🔥 đảm bảo instance đúng
+        TurnPVPManager turnManager = turnObj.GetComponent<TurnPVPManager>();
+
         SpawnTeam(playerLineups[players[0]], Player1SpawnPoints, true);
         SpawnTeam(playerLineups[players[1]], Player2SpawnPoints, false);
 
-        // 🔥 đợi CharacterManager Register
-        yield return new WaitForSeconds(1f);
+        // 🔥 CHỜ REGISTER CHỈ TRÊN HOST
+        yield return new WaitUntil(() =>
+            turnManager != null &&
+            turnManager.HasStateAuthority &&
+            turnManager.playerTeam.Count > 0 &&
+            turnManager.enemyTeam.Count > 0
+        );
 
-        TurnPVPManager.Instance.GameStart();
+        Debug.Log("✅ Teams ready → Start Game");
+
+        // 🔥 chỉ host gọi
+        turnManager.GameStart();
     }
 
     void SpawnTeam(NetworkCharacterData[] team, List<Transform> points, bool isPlayer1)
+{
+    int count = Mathf.Min(team.Length, points.Count);
+
+    for (int i = 0; i < count; i++)
     {
-        int count = Mathf.Min(team.Length, points.Count);
+        var data = team[i];
+        Transform point = points[i];
 
-        for (int i = 0; i < count; i++)
+        Character c = CreateCharacter(data);
+
+        if (c == null)
         {
-            var data = team[i];
-            Transform point = points[i];
-
-            Character c = CreateCharacter(data);
-
-            if (c == null)
-            {
-                Debug.LogError("❌ Character null → skip");
-                continue;
-            }
-
-            NetworkObject obj = Runner.Spawn(
-                c.currentStats.baseStats.characterPrefab,
-                point.position,
-                point.rotation
-            );
-
-            obj.transform.localScale = Vector3.one * 61f;
-
-            CharacterManager cm = obj.GetComponent<CharacterManager>();
-            if (cm != null)
-            {
-                cm.Stats = c.currentStats;
-                cm.Hud.isPlayer = isPlayer1;
-            }
+            Debug.LogError("Character null → skip");
+            continue;
         }
+
+        // 🔥 spawn TRỰC TIẾP đúng vị trí (quan trọng nhất)
+        NetworkObject obj = Runner.Spawn(
+            c.currentStats.baseStats.characterPrefab,
+            point.position,
+            point.rotation
+        );
+
+
+        // 🔥 đảm bảo vị trí CHUẨN trên cả host + client
+        obj.transform.position = point.position;
+        obj.transform.rotation = point.rotation;
+
+
+        CharacterManager cm = obj.GetComponent<CharacterManager>();
+        if (cm != null)
+        {
+            cm.Stats = c.currentStats;
+            cm.Hud.isPlayer = isPlayer1;
+        }
+
+        Debug.Log($"Spawn slot {i} → {c.currentStats.baseStats.characterName}");
     }
+}
 
     Character CreateCharacter(NetworkCharacterData data)
     {

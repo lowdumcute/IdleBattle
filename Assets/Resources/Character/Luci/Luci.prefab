@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 338515795310939580}
   - component: {fileID: 4740225004295210161}
   - component: {fileID: 4711161975871159974}
-  - component: {fileID: 7440210546465861852}
+  - component: {fileID: 7408917670954676960}
   m_Layer: 0
   m_Name: UnitRoot
   m_TagString: Untagged
@@ -256,7 +256,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7440210546465861852
+--- !u!114 &7408917670954676960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1346,6 +1346,7 @@ GameObject:
   - component: {fileID: 2734361560636771764}
   - component: {fileID: 7331493456493471109}
   - component: {fileID: 7021800086850208883}
+  - component: {fileID: 870299291846537699}
   m_Layer: 5
   m_Name: Luci
   m_TagString: Untagged
@@ -1362,7 +1363,7 @@ RectTransform:
   m_GameObject: {fileID: 3222167648754355912}
   m_LocalRotation: {x: -0, y: 0.008726557, z: -0, w: 0.9999619}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 61, y: 61, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 338515795310939580}
@@ -1386,7 +1387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ca15cadd0398c04b9e5a8a4e1f87a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hud: {fileID: 7440210546465861852}
+  Hud: {fileID: 7408917670954676960}
   Stats:
     baseStats: {fileID: 11400000, guid: a7ea3489acd02034a8e1045dcc20ea5d, type: 2}
     CSpeed: 0
@@ -1418,8 +1419,26 @@ MonoBehaviour:
   ObjectInterest: 1
   Flags: 262145
   NestedObjects: []
-  NetworkedBehaviours: []
+  NetworkedBehaviours:
+  - {fileID: 870299291846537699}
   ForceRemoteRenderTimeframe: 0
+--- !u!114 &870299291846537699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3222167648754355912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stateAuthorityChangeErrorCorrectionDelta: 0
+  SyncScale: 0
+  SyncParent: 0
+  _autoAOIOverride: 1
+  DisableSharedModeInterpolation: 0
 --- !u!1 &3282349675828596777
 GameObject:
   m_ObjectHideFlags: 0
@@ -5034,11 +5053,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7899187172507816164, guid: c25352d49a9ca4346bea594b32376855, type: 3}
+      propertyPath: SortKey
+      value: 2587903535
+      objectReference: {fileID: 0}
     - target: {fileID: 7905953572246009312, guid: c25352d49a9ca4346bea594b32376855, type: 3}
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7899187172507816164, guid: c25352d49a9ca4346bea594b32376855, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

@@ -1,14 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Fusion;
 
-public class TurnPVPManager : MonoBehaviour
+public class TurnPVPManager : NetworkBehaviour
 {
     public static TurnPVPManager Instance;
 
     [Header("Settings")]
     public TextMeshProUGUI RoundText;
-    public int CurrentRound;
+    [Networked]public int CurrentRound {get; set;}
 
     [Header("Teams")]
     public List<CharacterManager> playerTeam = new List<CharacterManager>();
@@ -19,22 +20,25 @@ public class TurnPVPManager : MonoBehaviour
 
     private bool isGameStarted = false;
 
-    void Awake()
+    public override void Spawned()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
+        if (Instance == null)
+            Instance = this;
     }
-
+    public override void Render()
+    {
+        UpdateUI();
+    }
     public void GameStart()
     {
+        if (!HasStateAuthority) return;
+
         Debug.Log("🔥 GameStart PVP");
 
         playerTeam.RemoveAll(c => c == null);
         enemyTeam.RemoveAll(c => c == null);
+
+        Debug.Log($"PlayerTeam: {playerTeam.Count} | EnemyTeam: {enemyTeam.Count}");
 
         if (playerTeam.Count == 0 || enemyTeam.Count == 0)
         {
@@ -51,10 +55,11 @@ public class TurnPVPManager : MonoBehaviour
         }
 
         CurrentRound = 1;
-        UpdateUI();
 
         currentTurnIndex = 0;
         isGameStarted = true;
+
+        UpdateUI();
 
         StartTurn(turnOrder[currentTurnIndex]);
     }
@@ -93,27 +98,26 @@ public class TurnPVPManager : MonoBehaviour
 
     public void EndTurn()
     {
+        if (!HasStateAuthority) return; // chỉ host điều khiển turn
+
         if (!isGameStarted || turnOrder.Count == 0) return;
 
         currentTurnIndex++;
 
         if (currentTurnIndex >= turnOrder.Count)
         {
-            CurrentRound++;
+            CurrentRound++; //  auto sync client
 
-            // 🔥 dùng BattlePVPManager
             if (BattlePVPManager.Instance != null &&
                 CurrentRound > BattlePVPManager.Instance.MaxRound)
             {
-                Debug.Log("⏱ Hết round → hòa");
+                Debug.Log(" Hết round → hòa");
                 isGameStarted = false;
                 return;
             }
 
             UpdateTurnOrder();
             currentTurnIndex = 0;
-
-            UpdateUI();
         }
 
         if (turnOrder.Count > 0)
