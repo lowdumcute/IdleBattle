@@ -1,10 +1,7 @@
 fileFormatVersion: 2
 guid: 6a1158b8c77e74152951cddb6f1d77de
-PrefabImporter:
-  externalObjects: {}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+labels:
+- FusionPrefab
 AssetOrigin:
   serializedVersion: 1
   productId: 192104
@@ -12,3 +9,8 @@ AssetOrigin:
   packageVersion: 3.1.0
   assetPath: Assets/SPUM/Resources/Addons/BasicPack/2_Prefab/Human/SPUM_20240911215639580.prefab
   uploadId: 777923
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

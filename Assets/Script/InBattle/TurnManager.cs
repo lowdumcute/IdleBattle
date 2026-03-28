@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-public class TurnManager : MonoBehaviour
+public class TurnStageManager : MonoBehaviour
 {
-    public static TurnManager Instance;
+    public static TurnStageManager Instance;
 
     [Header("Settings")]
     public TextMeshProUGUI RoundText;
@@ -33,7 +33,7 @@ public class TurnManager : MonoBehaviour
         // Cập nhật thứ tự lượt trước khi bắt đầu
         UpdateTurnOrder();
         CurrentRound = 1;
-        RoundText.text = $"{CurrentRound} / {BattleManager.Instance.MaxRound}";
+        RoundText.text = $"{CurrentRound} / {BattleStageManager.Instance.MaxRound}";
         if (turnOrder.Count > 0)
         {
             currentTurnIndex = 0;
@@ -132,6 +132,6 @@ public class TurnManager : MonoBehaviour
     }
     public void UpdateUI()
     {
-        RoundText.text = $"{CurrentRound} / {BattleManager.Instance.MaxRound}";
+        RoundText.text = $"{CurrentRound} / {BattleStageManager.Instance.MaxRound}";
     }
 }

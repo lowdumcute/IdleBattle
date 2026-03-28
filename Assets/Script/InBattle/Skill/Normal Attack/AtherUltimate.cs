@@ -13,8 +13,8 @@ public class AtherUltimate : SkillBase
         CharacterManager _)
     {
         var enemies = caster.Hud.isPlayer
-            ? TurnManager.Instance.enemyTeam
-            : TurnManager.Instance.playerTeam;
+            ? TurnStageManager.Instance.enemyTeam
+            : TurnStageManager.Instance.playerTeam;
 
         enemies = enemies.Where(e => !e.Hud.isDead).ToList();
 

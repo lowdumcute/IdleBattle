@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Luci
   m_EditorClassIdentifier: 
   realm: 0
-  characterID: 002
+  characterID: char_002
   characterName: Luci
   characterIcon: {fileID: 21300000, guid: 477b17659a2f5914da1dcaeccd0ba84e, type: 3}
   characterPrefab: {fileID: 3222167648754355912, guid: 6a1158b8c77e74152951cddb6f1d77de, type: 3}

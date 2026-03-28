@@ -55,7 +55,7 @@ public class HudSystem : MonoBehaviour
     public void TakeDamage(float amount)
     {
         animator.SetTrigger("Damaged");
-        BattleManager.Instance.ShowDamagePopup(
+        BattleStageManager.Instance.ShowDamagePopup(
             transform.position + Vector3.up * 2f,
             amount
         );

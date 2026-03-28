@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class BattleManager : MonoBehaviour
+public class BattleStageManager : MonoBehaviour
 {
-    public static BattleManager Instance;
+    public static BattleStageManager Instance;
     [Header("Settings")]
     public List<Transform> PlayerSpawnPoints;
     public List<Transform> EnemySpawnPoints;
@@ -65,7 +65,7 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         // Bắt đầu trận đấu
-        TurnManager.Instance.GameStart();
+        TurnStageManager.Instance.GameStart();
     }
 
     private void SpawnTeam(List<Character> team, List<Transform> points)

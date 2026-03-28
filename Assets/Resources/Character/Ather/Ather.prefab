@@ -3658,6 +3658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7198936476878254218}
   - component: {fileID: 7320940335365076153}
+  - component: {fileID: -3488944849340533556}
   m_Layer: 0
   m_Name: Ather
   m_TagString: Untagged
@@ -3714,6 +3715,24 @@ MonoBehaviour:
   Skills:
     normalSkill: {fileID: 11400000, guid: 7c08264a2f6ad8b43977f8b824ea70da, type: 2}
     ultimateSkill: {fileID: 11400000, guid: 182c9497652e3664f9b9482948d9a57b, type: 2}
+--- !u!114 &-3488944849340533556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7161250531022830628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SortKey: 2953155190
+  ObjectInterest: 1
+  Flags: 262145
+  NestedObjects: []
+  NetworkedBehaviours: []
+  ForceRemoteRenderTimeframe: 0
 --- !u!1 &7288385496521639425
 GameObject:
   m_ObjectHideFlags: 0

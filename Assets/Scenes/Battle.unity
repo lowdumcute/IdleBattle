@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 96228093}
   - component: {fileID: 96228095}
   - component: {fileID: 96228094}
+  - component: {fileID: 96228096}
   m_Layer: 5
   m_Name: Round
   m_TagString: Untagged
@@ -195,6 +196,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96228092}
   m_CullTransparentMesh: 1
+--- !u!114 &96228096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96228092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SortKey: 2167969799
+  ObjectInterest: 1
+  Flags: 262145
+  NestedObjects: []
+  NetworkedBehaviours: []
+  ForceRemoteRenderTimeframe: 0
 --- !u!1 &132207747
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,7 +864,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 951287970}
-  - component: {fileID: 951287969}
+  - component: {fileID: 951287971}
+  - component: {fileID: 951287972}
+  - component: {fileID: 951287973}
   m_Layer: 0
   m_Name: TurnManager
   m_TagString: Untagged
@@ -853,23 +874,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &951287969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951287968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a45a4bed94154746a7c84087e075641, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RoundText: {fileID: 1349811432}
-  CurrentRound: 0
-  playerTeam: []
-  enemyTeam: []
-  turnOrder: []
 --- !u!4 &951287970
 Transform:
   m_ObjectHideFlags: 0
@@ -885,6 +889,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &951287971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951287968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SortKey: 2147008397
+  ObjectInterest: 1
+  Flags: 262145
+  NestedObjects: []
+  NetworkedBehaviours: []
+  ForceRemoteRenderTimeframe: 0
+--- !u!114 &951287972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951287968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1f3b65015915b4aa1368bfcfd81f41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoundText: {fileID: 1349811432}
+  CurrentRound: 0
+  playerTeam: []
+  enemyTeam: []
+  turnOrder: []
+--- !u!114 &951287973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951287968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69cbe64bfc4e61f41b179de955718eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentMode: 1
 --- !u!1 &1005204782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,6 +1610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1917199533}
+  - component: {fileID: 1917199534}
   m_Layer: 0
   m_Name: UIDamageText
   m_TagString: Untagged
@@ -1580,6 +1633,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1917199534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917199532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SortKey: 3299064141
+  ObjectInterest: 1
+  Flags: 262145
+  NestedObjects: []
+  NetworkedBehaviours: []
+  ForceRemoteRenderTimeframe: 0
 --- !u!1 &1983566841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,7 +1660,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983566843}
-  - component: {fileID: 1983566842}
+  - component: {fileID: 1983566845}
+  - component: {fileID: 1983566844}
   m_Layer: 0
   m_Name: BattleManager
   m_TagString: Untagged
@@ -1597,34 +1669,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1983566842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983566841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ceb83bcd01056d42891532b51f236ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerSpawnPoints:
-  - {fileID: 1051188959}
-  - {fileID: 580104070}
-  - {fileID: 741695813}
-  - {fileID: 1878364306}
-  - {fileID: 256011589}
-  - {fileID: 540394405}
-  EnemySpawnPoints:
-  - {fileID: 763219909}
-  - {fileID: 948640663}
-  - {fileID: 1841844757}
-  - {fileID: 132207748}
-  - {fileID: 816101604}
-  - {fileID: 1497471722}
-  MaxRound: 10
-  DamagePopupPrefab: {fileID: 6385471026264126373, guid: 5b9b960699df5e34988e20fc840086d9, type: 3}
 --- !u!4 &1983566843
 Transform:
   m_ObjectHideFlags: 0
@@ -1640,6 +1684,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1983566844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983566841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SortKey: 263822398
+  ObjectInterest: 1
+  Flags: 262145
+  NestedObjects: []
+  NetworkedBehaviours:
+  - {fileID: 1983566845}
+  ForceRemoteRenderTimeframe: 0
+--- !u!114 &1983566845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983566841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4edbc1af99c9c64faa9d308255c2514, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player1SpawnPoints:
+  - {fileID: 1051188959}
+  - {fileID: 580104070}
+  - {fileID: 741695813}
+  - {fileID: 1878364306}
+  - {fileID: 256011589}
+  - {fileID: 540394405}
+  Player2SpawnPoints:
+  - {fileID: 763219909}
+  - {fileID: 948640663}
+  - {fileID: 1841844757}
+  - {fileID: 132207748}
+  - {fileID: 816101604}
+  - {fileID: 1497471722}
+  MaxRound: 30
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1345,6 +1345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2734361560636771764}
   - component: {fileID: 7331493456493471109}
+  - component: {fileID: 7021800086850208883}
   m_Layer: 5
   m_Name: Luci
   m_TagString: Untagged
@@ -1401,6 +1402,24 @@ MonoBehaviour:
   Skills:
     normalSkill: {fileID: 11400000, guid: 7c08264a2f6ad8b43977f8b824ea70da, type: 2}
     ultimateSkill: {fileID: 11400000, guid: 182c9497652e3664f9b9482948d9a57b, type: 2}
+--- !u!114 &7021800086850208883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3222167648754355912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SortKey: 1187959202
+  ObjectInterest: 1
+  Flags: 262145
+  NestedObjects: []
+  NetworkedBehaviours: []
+  ForceRemoteRenderTimeframe: 0
 --- !u!1 &3282349675828596777
 GameObject:
   m_ObjectHideFlags: 0
