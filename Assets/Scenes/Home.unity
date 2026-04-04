@@ -862,7 +862,6 @@ MonoBehaviour:
       CDef: 0
       MHealth: 0
       MMana: 0
-      ManaBonus: 0
       CCriticalRate: 0
       CCriticalDamage: 0
       PowerStats: 0
@@ -876,7 +875,6 @@ MonoBehaviour:
       CDef: 0
       MHealth: 0
       MMana: 0
-      ManaBonus: 0
       CCriticalRate: 0
       CCriticalDamage: 0
       PowerStats: 0
@@ -5934,7 +5932,6 @@ MonoBehaviour:
       CDef: 0
       MHealth: 0
       MMana: 0
-      ManaBonus: 0
       CCriticalRate: 0
       CCriticalDamage: 0
       PowerStats: 0
@@ -6826,6 +6823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc846229e53b624a8a47b24cf9ac874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerObject: {fileID: -3488944849340533556, guid: eea860af4a2d0e940bb2c59234afe3d1, type: 3}
 --- !u!4 &1155818053
 Transform:
   m_ObjectHideFlags: 0
@@ -6861,7 +6859,6 @@ MonoBehaviour:
       CDef: 0
       MHealth: 0
       MMana: 0
-      ManaBonus: 0
       CCriticalRate: 0
       CCriticalDamage: 0
       PowerStats: 0
@@ -6875,7 +6872,6 @@ MonoBehaviour:
       CDef: 0
       MHealth: 0
       MMana: 0
-      ManaBonus: 0
       CCriticalRate: 0
       CCriticalDamage: 0
       PowerStats: 0

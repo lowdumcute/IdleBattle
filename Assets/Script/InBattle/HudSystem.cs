@@ -1,157 +1,138 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using TMPro;
-public class HudSystem : MonoBehaviour
+using Fusion;
+public enum TypeTeam
 {
-    [HideInInspector] public CharacterManager owner;
-    [Header(" Stats")]
-    private float maxHealth;
-    private float maxMana = 100f;
-    float currentHealth;
-    [HideInInspector] public float currentMana;
-
-    [Header("UI References")]
+    none,
+    Player,
+    Enemy
+}
+public class HudSystem : NetworkBehaviour
+{
+    [Header("UI")]
     public Image healthFill;
     public Image manaFill;
-    public TMP_Text LevelText;
-    public TMP_Text NameText;
-    public RectTransform uiParent; // Rung khung Máu Mana
 
-    private Vector3 originalParentPos;
+    [HideInInspector] public CharacterManager owner;
 
-    [Header("Type")]
-    public bool isPlayer = false;
-    public bool isDead = false;
-    [HideInInspector]public Animator animator;
+    [Networked] public TypeTeam typeTeam {get; set;}
+    public bool isDead;
 
-    void Start()
+    // NETWORKED DATA
+    [Networked] public float maxHealth { get; set; }
+    [Networked] public float maxMana { get; set; }
+    [Networked] public float currentHealth { get; set; }
+    [Networked] public float currentMana { get; set; }
+
+
+
+    public override void Spawned()
     {
-        animator = GetComponent<Animator>();
         UpdateUI();
-        ApplyFacingDirection();
-        if (uiParent != null)
-            originalParentPos = uiParent.localPosition;
+        if (owner == null)
+            owner = GetComponentInParent<CharacterManager>();
+
+        // ✅ THÊM DÒNG NÀY
+        if (owner.Stats.MHealth <= 0)
+            owner.Stats.InitializeStats();
+
+        if (Object.HasStateAuthority)
+        {
+            maxHealth = owner.Stats.MHealth;
+            maxMana = owner.Stats.MMana;
+            currentHealth = maxHealth;
+            currentMana = maxMana;
+        }
     }
-
-    // ==========================
-    //       HEALTH LOGIC
-    // ==========================
-    public void SetUI(float health, float ManaBonus, float level, string Name)
+    public void Update()
     {
-        maxHealth = health;
-        currentHealth = maxHealth;
-        currentMana += ManaBonus; // mốt sửa sau nếu cần
-        LevelText.text = $"{level}";
-        NameText.text = Name;
-        UpdateUI();
-    }
-    public void RefreshFromStats(CurrentStats stats)
-    {
-        maxHealth = stats.baseStats.GetHealthByLevel(stats.CurrentLevel);
-        currentHealth = stats.MHealth;
-        UpdateUI();
-    }
-    public void TakeDamage(float amount)
-    {
-        animator.SetTrigger("Damaged");
-        BattleStageManager.Instance.ShowDamagePopup(
-            transform.position + Vector3.up * 2f,
-            amount
-        );
+        if (Object.HasStateAuthority)
+        {
+            // H = trừ máu
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                TakeDamage(10f);
+                Debug.Log("Trừ 10 máu");
+            }
 
-        RefreshFromStats(owner.Stats);
+            // G = cộng mana
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                restoreMana(10);
 
-        StartCoroutine(ShakeUI());
-    }
+                Debug.Log("Cộng 10 mana");
+            }  
+        }
 
-    // ==========================
-    //        MANA LOGIC
-    // ==========================
-    public bool UseMana(float amount)
-    {
-        if (currentMana < amount)
-            return false;
-
-        currentMana -= amount;
-        UpdateUI();
-        return true;
-    }
-
-    public void RecoverMana(float amount)
-    {
-        currentMana = Mathf.Clamp(currentMana + amount, 0, maxMana);
+        
         UpdateUI();
     }
 
-    // ==========================
-    //          UI UPDATE
-    // ==========================
+    // =========================
+    // UPDATE UI
+    // =========================
     void UpdateUI()
     {
-        if (healthFill)
-        {
+        if (healthFill != null && maxHealth > 0)
             healthFill.fillAmount = currentHealth / maxHealth;
-            healthFill.color = isPlayer ? Color.green : new Color(0.7f, 0, 0);
-        }
 
-        if (manaFill)
-        {
-            float mp = currentMana / maxMana;
-            manaFill.fillAmount = mp;
-            manaFill.color = Color.Lerp(Color.gray, Color.cyan, mp);
-        }
+        if (manaFill != null && maxMana > 0)
+            manaFill.fillAmount = currentMana / maxMana;
     }
 
-    // ==========================
-    //        NATURAL SHAKE
-    // ==========================
-    IEnumerator ShakeUI()
+    // =========================
+    // DAMAGE
+    // =========================
+    public void TakeDamage(float dmg)
     {
-        if (uiParent == null)
-            yield break;
+        if (!Object.HasStateAuthority) return;
 
-        float duration = 0.1f;
-        float strength = 0.05f;
+        currentHealth -= dmg;
+        currentHealth = Mathf.Max(currentHealth, 0);
 
-        float timer = 0;
-
-        while (timer < duration)
+        if (currentHealth <= 0)
         {
-            timer += Time.deltaTime;
-
-            // Rung ngẫu nhiên theo 2 chiều → tự nhiên hơn
-            float offsetX = Random.Range(-strength, strength);
-            float offsetY = Random.Range(-strength * 0.5f, strength * 0.5f);
-
-            uiParent.localPosition = originalParentPos + new Vector3(offsetX, offsetY, 0);
-
-            yield return null;
+            Die();
         }
-
-        // Trả về đúng vị trí ban đầu
-        uiParent.localPosition = originalParentPos;
     }
 
+    // =========================
+    // USE MANA
+    // =========================
+    public void UseMana(float amount)
+    {
+        if (!Object.HasStateAuthority) return;
+
+        currentMana -= amount;
+        currentMana = Mathf.Min(currentMana, maxMana);
+    }
+
+    public void restoreMana(float amount)
+    {
+        if (!Object.HasStateAuthority) return;
+        currentMana += amount;
+        currentMana = Mathf.Max(currentMana, 0);
+    }
+    // =========================
+    // HEAL
+    // =========================
+    public void Heal(float amount)
+    {
+        if (!Object.HasStateAuthority) return;
+
+        currentHealth += amount;
+        currentHealth = Mathf.Min(currentHealth, maxHealth);
+    }
+
+    // =========================
+    // DEATH
+    // =========================
     public void Die()
     {
-        Debug.Log($"{gameObject.name} has died.");
-        animator.SetTrigger("Death");
-        animator.SetBool("isDeath", true);
+        if (isDead) return;
+
         isDead = true;
-        uiParent.gameObject.SetActive(false);
-        LevelText.gameObject.SetActive(false);
-        NameText.gameObject.SetActive(false);
-    }
-    void ApplyFacingDirection()
-    {
-        Vector3 s = transform.localScale;
 
-        if (isPlayer)
-            s.x = -Mathf.Abs(s.x);  // luôn âm
-        else
-            s.x = Mathf.Abs(s.x);   // luôn dương
-
-        transform.localScale = s;
+        gameObject.SetActive(false);
     }
 }

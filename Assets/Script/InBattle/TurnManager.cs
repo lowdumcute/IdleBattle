@@ -1,102 +1,134 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-public class TurnStageManager : MonoBehaviour
+using Fusion;
+
+public class TurnManager : NetworkBehaviour
 {
-    public static TurnStageManager Instance;
+    public static TurnManager Instance;
 
     [Header("Settings")]
     public TextMeshProUGUI RoundText;
-    public float CurrentRound ;
+    [Networked]public int CurrentRound {get; set;}
 
     [Header("Teams")]
     public List<CharacterManager> playerTeam = new List<CharacterManager>();
     public List<CharacterManager> enemyTeam = new List<CharacterManager>();
 
-    // Danh sách lượt thực sự, để quản lý thứ tự turn
     public List<CharacterManager> turnOrder = new List<CharacterManager>();
     private int currentTurnIndex = 0;
 
-    void Awake()
-    {
-        // Singleton chuẩn
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-    }
+    private bool isGameStarted = false;
 
+    public override void Spawned()
+    {
+        if (Instance == null)
+            Instance = this;
+    }
+    public override void Render()
+    {
+        UpdateUI();
+    }
     public void GameStart()
     {
-        // Cập nhật thứ tự lượt trước khi bắt đầu
-        UpdateTurnOrder();
-        CurrentRound = 1;
-        RoundText.text = $"{CurrentRound} / {BattleStageManager.Instance.MaxRound}";
-        if (turnOrder.Count > 0)
+        if (!HasStateAuthority) return;
+
+        playerTeam.RemoveAll(c => c == null);
+        enemyTeam.RemoveAll(c => c == null);
+
+        Debug.Log($"PlayerTeam: {playerTeam.Count} | EnemyTeam: {enemyTeam.Count}");
+
+        if (playerTeam.Count == 0 || enemyTeam.Count == 0)
         {
-            currentTurnIndex = 0;
-            StartTurn(turnOrder[currentTurnIndex]);
+            Debug.LogWarning(" Team chưa sẵn sàng!");
+            return;
         }
+
+        UpdateTurnOrder();
+
+        if (turnOrder.Count == 0)
+        {
+            Debug.LogWarning(" TurnOrder rỗng!");
+            return;
+        }
+
+        CurrentRound = 1;
+
+        currentTurnIndex = 0;
+        isGameStarted = true;
+
+        UpdateUI();
+
+        StartTurn(turnOrder[currentTurnIndex]);
     }
 
-    // Cập nhật thứ tự lượt dựa trên speed
     public void UpdateTurnOrder()
     {
         turnOrder.Clear();
+
         turnOrder.AddRange(playerTeam);
         turnOrder.AddRange(enemyTeam);
+
+        turnOrder.RemoveAll(c => c == null || c.Hud.isDead);
+
         turnOrder.Sort((a, b) => b.Stats.CSpeed.CompareTo(a.Stats.CSpeed));
     }
-    
+
     void StartTurn(CharacterManager character)
     {
-        if (turnOrder.Count == 0) return;
-        if (character == null) return;
+        if (!isGameStarted || character == null) return;
+
         if (character.Hud.isDead)
         {
-            Debug.Log($"{character.Stats.baseStats.characterName} is dead, skipping turn.");
             EndTurn();
             return;
         }
-        Debug.Log($"Tới lượt: {character.Stats.baseStats.characterName}");
 
-        // Gọi sự kiện → nhân vật tự chọn skill / tấn công
-        var turnActor = character.GetComponent<ITurnActor>();
-        if (turnActor != null)
-            turnActor.OnMyTurn();
+        Debug.Log($" Turn: {character.Stats.baseStats.characterName}");
+
+        var actor = character.GetComponent<ITurnActor>();
+
+        if (actor != null)
+            actor.OnMyTurn();
         else
-            Debug.LogWarning($"{character.name} không có ITurnActor!");
+            EndTurn();
     }
 
-    // Gọi khi 1 character kết thúc lượt
     public void EndTurn()
     {
-        if (turnOrder.Count == 0) return;
+        if (!HasStateAuthority) return; // chỉ host điều khiển turn
+
+        if (!isGameStarted || turnOrder.Count == 0) return;
+
         currentTurnIndex++;
+
         if (currentTurnIndex >= turnOrder.Count)
         {
-            // Vòng lặp lượt mới
+            CurrentRound++; //  auto sync client
+
+            if (BattleManager.Instance != null &&
+                CurrentRound > BattleManager.Instance.MaxRound)
+            {
+                Debug.Log(" Hết round → hòa");
+                isGameStarted = false;
+                return;
+            }
+
             UpdateTurnOrder();
             currentTurnIndex = 0;
-            CurrentRound++;
-            UpdateUI();
         }
 
         if (turnOrder.Count > 0)
             StartTurn(turnOrder[currentTurnIndex]);
 
         CheckTeamDefeat();
-        Debug.Log("EndTurn called"); // 👈 thêm
     }
 
-    // Quản lý đăng ký / xóa nhân vật
     public void Register(CharacterManager charData)
     {
         if (charData == null) return;
 
-        if (charData.Hud.isPlayer)
+        if (charData.Hud.typeTeam == TypeTeam.Player)
         {
             if (!playerTeam.Contains(charData))
                 playerTeam.Add(charData);
@@ -108,30 +140,27 @@ public class TurnStageManager : MonoBehaviour
         }
     }
 
-    public void Remove(CharacterManager charData)
-    {
-        if (charData == null) return;
-
-        if (charData.Hud.isPlayer)
-            playerTeam.Remove(charData);
-        else
-            enemyTeam.Remove(charData);
-    }
     private void CheckTeamDefeat()
     {
-        if (playerTeam.TrueForAll(c => c.Hud.isDead))
+        if (playerTeam.Count > 0 && playerTeam.TrueForAll(c => c.Hud.isDead))
         {
-            Debug.Log("Enemy Team Wins!");
-            turnOrder.Clear();
+            Debug.Log("🔥 Enemy Wins!");
+            isGameStarted = false;
         }
-        else if (enemyTeam.TrueForAll(c => c.Hud.isDead))
+        else if (enemyTeam.Count > 0 && enemyTeam.TrueForAll(c => c.Hud.isDead))
         {
-            Debug.Log("Player Team Wins!");
-            turnOrder.Clear();
+            Debug.Log("🔥 Player Wins!");
+            isGameStarted = false;
         }
     }
-    public void UpdateUI()
+
+    void UpdateUI()
     {
-        RoundText.text = $"{CurrentRound} / {BattleStageManager.Instance.MaxRound}";
+        if (RoundText != null)
+        {
+            float maxRound = BattleManager.Instance.MaxRound ;
+
+            RoundText.text = $"Round {CurrentRound} / {maxRound}";
+        }
     }
 }

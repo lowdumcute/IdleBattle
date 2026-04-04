@@ -268,16 +268,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d86a79f9b29ab429fc8a5e1aae03e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  owner: {fileID: 0}
-  currentMana: 0
   healthFill: {fileID: 6153022325612533516}
   manaFill: {fileID: 6925795249685834010}
-  LevelText: {fileID: 3131838809853981343}
-  NameText: {fileID: 9017303627109797229}
-  uiParent: {fileID: 6089438949687873263}
-  isPlayer: 0
+  owner: {fileID: 0}
+  _typeTeam: 0
   isDead: 0
-  animator: {fileID: 0}
+  _NetHealth: 0
+  _NetMana: 0
 --- !u!1 &648628651832973575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,14 +1392,13 @@ MonoBehaviour:
     CDef: 0
     MHealth: 0
     MMana: 0
-    ManaBonus: 0
     CCriticalRate: 0
     CCriticalDamage: 0
     PowerStats: 0
     CurrentLevel: 1
   Skills:
-    normalSkill: {fileID: 11400000, guid: 7c08264a2f6ad8b43977f8b824ea70da, type: 2}
-    ultimateSkill: {fileID: 11400000, guid: 182c9497652e3664f9b9482948d9a57b, type: 2}
+    normalSkill: {fileID: 0}
+    ultimateSkill: {fileID: 0}
 --- !u!114 &7021800086850208883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,6 +1418,7 @@ MonoBehaviour:
   - {fileID: 7544388336383817188}
   NetworkedBehaviours:
   - {fileID: 870299291846537699}
+  - {fileID: 7408917670954676960}
   ForceRemoteRenderTimeframe: 0
 --- !u!114 &870299291846537699
 MonoBehaviour:
@@ -5174,25 +5171,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c25352d49a9ca4346bea594b32376855, type: 3}
---- !u!114 &3131838809853981343 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 349374414722763555, guid: c25352d49a9ca4346bea594b32376855, type: 3}
-  m_PrefabInstance: {fileID: 3436172711771634108}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &4823451727444658674 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7881276440247578702, guid: c25352d49a9ca4346bea594b32376855, type: 3}
-  m_PrefabInstance: {fileID: 3436172711771634108}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &6089438949687873263 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8875948997317703507, guid: c25352d49a9ca4346bea594b32376855, type: 3}
   m_PrefabInstance: {fileID: 3436172711771634108}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &6153022325612533516 stripped
@@ -5226,16 +5207,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &9017303627109797229 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5948227338015700177, guid: c25352d49a9ca4346bea594b32376855, type: 3}
-  m_PrefabInstance: {fileID: 3436172711771634108}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

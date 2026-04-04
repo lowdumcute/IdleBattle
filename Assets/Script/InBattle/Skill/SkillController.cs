@@ -10,10 +10,6 @@ public class SkillController
     public IEnumerator UseSkill(CharacterManager caster, CharacterManager target)
     {
         // 1. Play attack animation
-        if (caster.Hud != null && caster.Hud.animator != null)
-        {
-            caster.Hud.animator.SetTrigger("Attack");
-        }
 
         // 2. Chờ animation vung tay / ra đòn
         yield return new WaitForSeconds(0.25f);

@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Linq;
 using System.Collections;
+using Fusion;
 
 [System.Serializable]
 public class CharacterManager : MonoBehaviour, ITurnActor
@@ -11,25 +12,6 @@ public class CharacterManager : MonoBehaviour, ITurnActor
     [Header("Skills")]
     public SkillController Skills = new SkillController();
 
-    void Start()
-    {
-        if (TurnSystem.Instance == null)
-        {
-            Debug.LogError("❌ TurnSystem chưa tồn tại!");
-            return;
-        }
-
-        // 🔥 Register đúng hệ thống
-        TurnSystem.Instance.Register(this);
-
-        // init stats
-        Stats.InitializeStats();
-
-        // setup UI
-        Hud.owner = this;
-        Hud.SetUI(Stats.MHealth, Stats.ManaBonus, Stats.CurrentLevel, Stats.baseStats.characterName);
-    }
-
     public void OnMyTurn()
     {
         StartCoroutine(OnMyTurnCoroutine());
@@ -39,7 +21,7 @@ public class CharacterManager : MonoBehaviour, ITurnActor
     {
         Debug.Log($"{Stats.baseStats.characterName}'s turn!");
 
-        var enemies = TurnSystem.Instance.GetEnemies(Hud.isPlayer);
+        var enemies = TurnSystem.Instance.GetEnemies(Hud.typeTeam);
         enemies = enemies.Where(e => e != null && !e.Hud.isDead).ToList();
 
         if (enemies.Count == 0)
@@ -89,5 +71,51 @@ public class CharacterManager : MonoBehaviour, ITurnActor
     {
         if (Hud.isDead) return;
         Hud.Die();
+    }
+}
+
+[System.Serializable]
+public class CurrentStats
+{
+    public CharacterBaseStats baseStats;
+    [Header("Current Stats")]
+
+    public float CSpeed;
+    public float CAttack;
+    public float CDef;
+    public float MHealth;
+    public float MMana;
+
+    public float CCriticalRate;
+    public float CCriticalDamage;
+
+    [Header("Progression")]
+    public float PowerStats;
+    public float CurrentLevel = 1;
+
+    public void InitializeStats()
+    {
+        MHealth = baseStats.GetHealthByLevel(CurrentLevel);
+        MMana = baseStats.maxMana;
+        CAttack = baseStats.GetAttackByLevel(CurrentLevel);
+        CDef = baseStats.GetDefenseByLevel(CurrentLevel);
+
+        CSpeed = baseStats.Speed;
+        CCriticalRate = baseStats.CriticalRate;
+        CCriticalDamage = baseStats.CriticalDamage;
+
+        UpdatePower();
+    }
+
+    // CT: ATK×1.2 + DEF×1 + HP×0.1 + SPD×2 + CR×15 + CD×8
+    public void UpdatePower()
+    {
+        PowerStats =
+            CAttack * 1.2f +
+            CDef * 1f +
+            MHealth * 0.1f +
+            CSpeed * 2f +
+            CCriticalRate * 15f +
+            CCriticalDamage * 8f;
     }
 }

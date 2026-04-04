@@ -20,29 +20,23 @@ public class TurnSystem : MonoBehaviour
 
     public void Register(CharacterManager c)
     {
-        if (currentMode == Mode.PVP)
-            TurnPVPManager.Instance?.Register(c);
-        else
-            TurnStageManager.Instance?.Register(c);
+            TurnManager.Instance?.Register(c);
     }
 
-    public List<CharacterManager> GetEnemies(bool isPlayer)
+    public List<CharacterManager> GetEnemies(TypeTeam myTeam)
     {
-        if (currentMode == Mode.PVP)
-            return isPlayer 
-                ? TurnPVPManager.Instance.enemyTeam 
-                : TurnPVPManager.Instance.playerTeam;
+        var tm = TurnManager.Instance;
 
-        return isPlayer 
-            ? TurnStageManager.Instance.enemyTeam 
-            : TurnStageManager.Instance.playerTeam;
+        return myTeam switch
+        {
+            TypeTeam.Player => tm.enemyTeam,
+            TypeTeam.Enemy => tm.playerTeam,
+            _ => new List<CharacterManager>()
+        };
     }
 
     public void EndTurn()
     {
-        if (currentMode == Mode.PVP)
-            TurnPVPManager.Instance?.EndTurn();
-        else
-            TurnStageManager.Instance?.EndTurn();
+            TurnManager.Instance?.EndTurn();
     }
 }

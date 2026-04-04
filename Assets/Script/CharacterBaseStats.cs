@@ -18,6 +18,7 @@ public class CharacterBaseStats : ScriptableObject
     [Header("Base Stats")]
     public float maxHealth = 100f;
     public float maxMana = 100f;
+    public float ManaBonus = 0;
     public float attack = 10f;
     public float defense = 5f;
     public float Speed = 3.5f;
@@ -56,6 +57,7 @@ public class CharacterBaseStats : ScriptableObject
     {
         return defense + (level - baseLevel) * defensePerLevel;
     }
+    
 }
 public enum Rarity
 {

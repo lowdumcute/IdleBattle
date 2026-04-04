@@ -1,11 +1,10 @@
 using Fusion;
 using Fusion.Sockets;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System.Collections;
-
-public class TestFusion : MonoBehaviour, INetworkRunnerCallbacks
+using System.Linq;
+public class NetworkFusion : MonoBehaviour, INetworkRunnerCallbacks
 {
     private NetworkRunner runner;
 
@@ -87,19 +86,31 @@ public class TestFusion : MonoBehaviour, INetworkRunnerCallbacks
 
     void SendLineup()
     {
-        if (BattlePVPManager.Instance != null)
-        {
-            BattlePVPManager.Instance.SendMyLineup();
-        }
-        else
-        {
-            Debug.LogWarning("BattlePVPManager chưa tồn tại!");
-        }
-    }
+        var lineup = LineUp.Instance.GetNetworkLineup();
 
+        bool isPlayer = runner.LocalPlayer == runner.LocalPlayer; // player local
+
+        BattleManager.Instance.SpawnTeam(
+            runner.LocalPlayer,
+            lineup,
+            true // player luôn là true
+        );
+    }
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
     {
         Debug.Log($"Player joined: {player}");
+
+        if (!runner.IsSharedModeMasterClient) return;
+
+        var lineup = LineUp.Instance.GetNetworkLineup();
+
+        bool isFirstPlayer = player == runner.ActivePlayers.First();
+
+        BattleManager.Instance.SpawnTeam(
+            player,
+            lineup,
+            isFirstPlayer // player 1 = Player, player 2 = Enemy
+        );
     }
 
     public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)

@@ -1,9 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class LineUpPVP : MonoBehaviour
+public class LineUp : MonoBehaviour
 {
-    public static LineUpPVP Instance;
+    public static LineUp Instance;
 
     public List<Character> myLineup = new List<Character>();
 
@@ -19,16 +19,29 @@ public class LineUpPVP : MonoBehaviour
 
         foreach (var c in myLineup)
         {
+            if (c.currentStats == null)
+            {
+                Debug.LogError("currentStats NULL");
+                continue;
+            }
+
+            if (c.currentStats.baseStats == null)
+            {
+                Debug.LogError("baseStats NULL");
+                continue;
+            }
+
+            Debug.Log($"Lineup ID: {c.currentStats.baseStats.characterID}");
+
             result.Add(new NetworkCharacterData
             {
                 characterID = c.currentStats.baseStats.characterID,
                 level = (int)c.currentStats.CurrentLevel,
                 star = c.star,
                 realm = (int)c.currentStats.baseStats.realm
-                
             });
         }
 
-        return result.ToArray(); // 🔥 QUAN TRỌNG
+        return result.ToArray();
     }
 }
