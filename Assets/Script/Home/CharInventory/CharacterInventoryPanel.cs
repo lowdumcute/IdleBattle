@@ -30,7 +30,7 @@ public class CharacterInventoryPanel : MonoBehaviour
         {
             GameObject cardObject = Instantiate(cardPrefab, Parent.transform);
             CardButton cardButton = cardObject.GetComponent<CardButton>();
-            cardButton.InitializeCard(character);
+            cardButton.UpdateCard(character);
         }
     }
 }
