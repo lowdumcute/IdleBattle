@@ -86,31 +86,13 @@ public class NetworkFusion : MonoBehaviour, INetworkRunnerCallbacks
 
     void SendLineup()
     {
-        var lineup = LineUp.Instance.GetNetworkLineup();
+        var lineup = Lineup.Instance.GetNetworkLineup();
 
-        bool isPlayer = runner.LocalPlayer == runner.LocalPlayer; // player local
-
-        BattleManager.Instance.SpawnTeam(
-            runner.LocalPlayer,
-            lineup,
-            true // player luôn là true
-        );
+        BattleManager.Instance.RPC_SendLineup(lineup);
     }
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
     {
         Debug.Log($"Player joined: {player}");
-
-        if (!runner.IsSharedModeMasterClient) return;
-
-        var lineup = LineUp.Instance.GetNetworkLineup();
-
-        bool isFirstPlayer = player == runner.ActivePlayers.First();
-
-        BattleManager.Instance.SpawnTeam(
-            player,
-            lineup,
-            isFirstPlayer // player 1 = Player, player 2 = Enemy
-        );
     }
 
     public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)

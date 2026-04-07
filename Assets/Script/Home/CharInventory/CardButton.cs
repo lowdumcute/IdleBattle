@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 public enum CardType
 {
     ButtonShowInfo
@@ -9,10 +7,21 @@ public enum CardType
 public class CardButton : MonoBehaviour
 {
     public InfoCharButton infoButton;
-
+    public GameObject Status;
     public void UpdateCard(Character character)
     {
         infoButton.UpdateCard(character);
+        CheckStatus(character);
+    }
+    public void CheckStatus(Character character)
+    {   
+        // Update status GameObject
+        if (Status == null)
+        {
+            Debug.LogWarning("Status GameObject is not assigned.");
+            return;
+        }
+        Status.SetActive(character.isLineup);
     }
     public void OnCardButtonClicked()
     {
@@ -33,7 +42,5 @@ public class CardButton : MonoBehaviour
         Character character = CharacterInventory.Instance.ownedCharacters[index];
         CharDetail.Instance.UpdateInfo(character.currentStats, infoButton.characterID);
         CharDetail.Instance.OpenPanel();
-        // TODO: mở UI chi tiết nhân vật
-        // CharacterDetailUI.Instance.Show(character);
     }
 }

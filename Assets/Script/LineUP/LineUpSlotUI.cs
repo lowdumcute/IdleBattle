@@ -2,8 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
-public class LineUpSlotButton : MonoBehaviour
+public class LineUpSlotUI : MonoBehaviour
 {
     public Position position;
     public GameObject InfoObject;
@@ -23,6 +22,11 @@ public class LineUpSlotButton : MonoBehaviour
         infoChar.UpdateCard(character);
         infoChar.characterImage.gameObject.SetActive(true);
         InfoObject.SetActive(true);
+    }
+    public void ClearSlot()
+    {
+        infoChar.characterImage.gameObject.SetActive(false);
+        InfoObject.SetActive(false);
     }
 }
 

@@ -25,12 +25,28 @@ public class CharacterInventoryPanel : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        // Load characters from inventory
-        foreach (Character character in CharacterInventory.Instance.ownedCharacters)
+        var list = CharacterInventory.Instance.ownedCharacters;
+
+        for (int i = 0; i < list.Count; i++)
         {
+            Character character = list[i];
+
             GameObject cardObject = Instantiate(cardPrefab, Parent.transform);
+
+            // Update UI
             CardButton cardButton = cardObject.GetComponent<CardButton>();
             cardButton.UpdateCard(character);
+
+            // 🔥 GÁN ID Ở ĐÂY
+            InfoCharButton info = cardButton.infoButton; // Lấy InfoCharButton từ CardButton
+            if (info != null)
+            {
+                info.characterID = i;
+            }
+            else
+            {
+                Debug.LogError("Card prefab thiếu InfoCharButton!");
+            }
         }
     }
 }

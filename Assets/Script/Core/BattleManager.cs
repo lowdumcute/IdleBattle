@@ -1,52 +1,57 @@
 using UnityEngine;
 using System.Collections.Generic;
 using Fusion;
+using System.Linq;
 
 public class BattleManager : NetworkBehaviour
 {
-    [System.Serializable]
-    public class CharacterPrefabEntry
-    {
-        public string id;
-        public NetworkObject prefab;
-    }
-
     public static BattleManager Instance;
 
-    [Header("Prefab Map")]
-    public List<CharacterPrefabEntry> prefabMap;
-    private Dictionary<string, NetworkObject> prefabDict;
-
     [Header("Spawn Points")]
-    public List<Transform> PlayerSpawnPoints;
-    public List<Transform> EnemySpawnPoints;
-
-    public float MaxRound;
+    public List<InfoSpawn> PlayerSpawnPoints;
+    public List<InfoSpawn> EnemySpawnPoints;
+    [Header("info Round")]
+    public int MaxRound = 20;
+    private Dictionary<PlayerRef, NetworkCharacterData[]> playerLineups = new();
 
     private void Awake()
     {
         Instance = this;
+    }
 
-        // 🔥 INIT DICTIONARY
-        prefabDict = new Dictionary<string, NetworkObject>();
+    // =========================
+    // CLIENT → HOST gửi lineup
+    // =========================
+    [Rpc(RpcSources.All, RpcTargets.StateAuthority)]
+    public void RPC_SendLineup(NetworkCharacterData[] lineup, RpcInfo info = default)
+    {
+        playerLineups[info.Source] = lineup;
 
-        foreach (var e in prefabMap)
+        Debug.Log($"📩 Nhận lineup từ player: {info.Source}");
+
+        // 🔥 Khi đủ 2 player thì spawn
+        if (playerLineups.Count >= 2)
         {
-            string key = e.id.Trim();
-
-            if (!prefabDict.ContainsKey(key))
-            {
-                prefabDict.Add(key, e.prefab);
-            }
-            else
-            {
-                Debug.LogError($"❌ Trùng ID prefab: {key}");
-            }
+            SpawnAll();
         }
     }
 
     // =========================
-    // SPAWN TEAM
+    void SpawnAll()
+    {
+        var players = playerLineups.Keys.ToList();
+
+        for (int i = 0; i < players.Count; i++)
+        {
+            var player = players[i];
+            var lineup = playerLineups[player];
+
+            bool isPlayer = (i == 0); // player đầu là Player, sau là Enemy
+
+            SpawnTeam(player, lineup, isPlayer);
+        }
+    }
+
     // =========================
     public void SpawnTeam(PlayerRef player, NetworkCharacterData[] lineup, bool isPlayer)
     {
@@ -54,72 +59,46 @@ public class BattleManager : NetworkBehaviour
 
         var spawnPoints = isPlayer ? PlayerSpawnPoints : EnemySpawnPoints;
 
-        for (int i = 0; i < lineup.Length; i++)
+        foreach (var data in lineup)
         {
-            if (i >= spawnPoints.Count) break;
-
-            var data = lineup[i];
-
             string id = data.characterID.ToString();
-            Realm realm = (Realm)data.realm;
+            Position pos = (Position)data.position;
 
-            // 🔥 LẤY DATA TỪ DATAMANAGER
-            var baseStats = DataManager.Instance.AllData.GetCharacter(id, realm);
+            var spawnInfo = spawnPoints.Find(s => s.position == pos);
 
-            if (baseStats == null)
+            if (spawnInfo == null || spawnInfo.spawnPoint == null)
             {
-                Debug.LogError($"❌ Không tìm thấy character: {id} - realm {realm}");
+                Debug.LogError($"❌ Không tìm spawn point: {pos}");
                 continue;
             }
 
-            // 🔥 LẤY PREFAB
-            var prefabGO = baseStats.characterPrefab;
+            var baseStats = DataManager.Instance.AllData.GetCharacter(id, (Realm)data.realm);
 
-            if (prefabGO == null)
-            {
-                Debug.LogError($"❌ Prefab NULL: {id}");
-                continue;
-            }
+            var netObj = baseStats.characterPrefab.GetComponent<NetworkObject>();
 
-            var netObj = prefabGO.GetComponent<NetworkObject>();
-
-            if (netObj == null)
-            {
-                Debug.LogError($"❌ Prefab chưa có NetworkObject: {id}");
-                continue;
-            }
-
-            // 🔥 SPAWN
             var obj = Runner.Spawn(
                 netObj,
-                spawnPoints[i].position,
+                spawnInfo.spawnPoint.position,
                 Quaternion.identity,
                 player
             );
 
             var chara = obj.GetComponent<CharacterManager>();
 
-            // 🔥 SET DATA
             chara.Stats.baseStats = baseStats;
             chara.Stats.CurrentLevel = data.level;
-
             chara.Stats.InitializeStats();
 
-            // 🔥 TEAM
             chara.Hud.typeTeam = isPlayer ? TypeTeam.Player : TypeTeam.Enemy;
 
-            Debug.Log($"✅ Spawn {id} (realm {realm}) tại slot {i}");
+            Debug.Log($"✅ Spawn {id} cho player {player}");
         }
     }
+}
 
-    // =========================
-    // GET PREFAB (NEW)
-    // =========================
-    NetworkObject GetPrefabByID(string id)
-    {
-        if (prefabDict.TryGetValue(id, out var prefab))
-            return prefab;
-
-        return null;
-    }
+[System.Serializable]
+public class InfoSpawn
+{
+    public Position position;
+    public Transform spawnPoint;
 }

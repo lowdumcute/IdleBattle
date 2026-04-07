@@ -6,4 +6,6 @@ public struct NetworkCharacterData : INetworkStruct
     public int level;
     public int star;
     public int realm;
+    public int position;
+
 }
