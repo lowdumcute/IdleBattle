@@ -6,11 +6,23 @@ using TMPro;
 public class LineUpSlotButton : MonoBehaviour
 {
     public Position position;
-    public InfoCharButton infoButton;
+    public GameObject InfoObject;
+    public InfoCharButton infoChar;
+    public void Start()
+    {
+        InfoObject.SetActive(false);
+        infoChar.characterImage.gameObject.SetActive(false);
+    }
 
     public void UpdateCard(Character character)
     {
-        infoButton.UpdateCard(character);
+        if (character == null)
+        {
+            return;
+        }
+        infoChar.UpdateCard(character);
+        infoChar.characterImage.gameObject.SetActive(true);
+        InfoObject.SetActive(true);
     }
 }
 
