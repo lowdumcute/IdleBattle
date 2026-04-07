@@ -13,7 +13,7 @@ public class BattleManager : NetworkBehaviour
     [Header("info Round")]
     public int MaxRound = 20;
     private Dictionary<PlayerRef, NetworkCharacterData[]> playerLineups = new();
-
+    private bool hasSpawned = false;
     private void Awake()
     {
         Instance = this;
@@ -27,11 +27,12 @@ public class BattleManager : NetworkBehaviour
     {
         playerLineups[info.Source] = lineup;
 
-        Debug.Log($"📩 Nhận lineup từ player: {info.Source}");
+        Debug.Log($" Nhận lineup từ player: {info.Source}");
 
-        // 🔥 Khi đủ 2 player thì spawn
-        if (playerLineups.Count >= 2)
+        //  Khi đủ 2 player thì spawn
+        if (playerLineups.Count >= 2 && !hasSpawned)
         {
+            hasSpawned = true;
             SpawnAll();
         }
     }
@@ -39,14 +40,25 @@ public class BattleManager : NetworkBehaviour
     // =========================
     void SpawnAll()
     {
-        var players = playerLineups.Keys.ToList();
+        var players = Runner.ActivePlayers
+            .OrderBy(p => p.PlayerId)
+            .ToList();
 
         for (int i = 0; i < players.Count; i++)
         {
             var player = players[i];
+
+            if (!playerLineups.ContainsKey(player))
+            {
+                Debug.LogError($" Không có lineup cho player: {player}");
+                continue;
+            }
+
             var lineup = playerLineups[player];
 
-            bool isPlayer = (i == 0); // player đầu là Player, sau là Enemy
+            bool isPlayer = (i == 0);
+
+            Debug.Log($"Spawn CHUẨN cho player: {player}");
 
             SpawnTeam(player, lineup, isPlayer);
         }
@@ -68,7 +80,7 @@ public class BattleManager : NetworkBehaviour
 
             if (spawnInfo == null || spawnInfo.spawnPoint == null)
             {
-                Debug.LogError($"❌ Không tìm spawn point: {pos}");
+                Debug.LogError($" Không tìm spawn point: {pos}");
                 continue;
             }
 
@@ -80,9 +92,10 @@ public class BattleManager : NetworkBehaviour
                 netObj,
                 spawnInfo.spawnPoint.position,
                 Quaternion.identity,
-                player
+                player  
             );
-
+            // FIX: ép authority đúng
+            obj.AssignInputAuthority(player);
             var chara = obj.GetComponent<CharacterManager>();
 
             chara.Stats.baseStats = baseStats;
@@ -91,7 +104,7 @@ public class BattleManager : NetworkBehaviour
 
             chara.Hud.typeTeam = isPlayer ? TypeTeam.Player : TypeTeam.Enemy;
 
-            Debug.Log($"✅ Spawn {id} cho player {player}");
+            Debug.Log($" Spawn {id} cho player {player}");
         }
     }
 }

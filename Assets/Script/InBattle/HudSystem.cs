@@ -12,10 +12,14 @@ public class HudSystem : NetworkBehaviour
     [Header("UI")]
     public Image healthFill;
     public Image manaFill;
+    [Header("Color")]
+    public Color friendlyColor = Color.green;
+    public Color enemyColor = Color.red;
 
     [HideInInspector] public CharacterManager owner;
 
     [Networked] public TypeTeam typeTeam {get; set;}
+    private TypeTeam lastTeam = TypeTeam.none;
     public bool isDead;
 
     // NETWORKED DATA
@@ -32,7 +36,7 @@ public class HudSystem : NetworkBehaviour
         if (owner == null)
             owner = GetComponentInParent<CharacterManager>();
 
-        // ✅ THÊM DÒNG NÀY
+        // THÊM DÒNG NÀY
         if (owner.Stats.MHealth <= 0)
             owner.Stats.InitializeStats();
 
@@ -43,28 +47,30 @@ public class HudSystem : NetworkBehaviour
             currentHealth = maxHealth;
             currentMana = maxMana;
         }
+        UpdateDirection();
     }
     public void Update()
     {
         if (Object.HasStateAuthority)
         {
-            // H = trừ máu
             if (Input.GetKeyDown(KeyCode.H))
             {
                 TakeDamage(10f);
-                Debug.Log("Trừ 10 máu");
             }
 
-            // G = cộng mana
             if (Input.GetKeyDown(KeyCode.G))
             {
                 restoreMana(10);
-
-                Debug.Log("Cộng 10 mana");
             }  
         }
 
-        
+        // detect change
+        if (lastTeam != typeTeam)
+        {
+            lastTeam = typeTeam;
+            UpdateDirection();
+        }
+
         UpdateUI();
     }
 
@@ -78,8 +84,45 @@ public class HudSystem : NetworkBehaviour
 
         if (manaFill != null && maxMana > 0)
             manaFill.fillAmount = currentMana / maxMana;
+        UpdateColor();
     }
+    void UpdateColor()
+    {
+        if (healthFill == null) return;
 
+        int localId = Runner.LocalPlayer.PlayerId;
+
+        bool isFriendly;
+
+        if (localId == 1)
+        {
+            // Player 1 (host)
+            isFriendly = (typeTeam == TypeTeam.Player);
+        }
+        else
+        {
+            // Player 2 (client)
+            isFriendly = (typeTeam == TypeTeam.Enemy);
+        }
+
+        healthFill.color = isFriendly ? friendlyColor : enemyColor;
+    }
+    void UpdateDirection()
+    {
+        if (owner == null) return;
+
+        var rect = owner.GetComponent<RectTransform>();
+        if (rect == null) return;
+
+        Vector3 scale = rect.localScale;
+
+        if (typeTeam == TypeTeam.Player)
+            scale.x = -Mathf.Abs(scale.x); // quay trái
+        else
+            scale.x = Mathf.Abs(scale.x);  // quay phải
+
+        rect.localScale = scale;
+    }
     // =========================
     // DAMAGE
     // =========================
