@@ -2,14 +2,12 @@ using System.Collections;
 using UnityEngine;
 
 [System.Serializable]
-public class SkillController
+public class AttackController
 {
-    public SkillBase normalSkill;
     public SkillBase ultimateSkill;
 
     public IEnumerator UseSkill(CharacterManager caster, CharacterManager target)
     {
-        // 1. Play attack animation
 
         // 2. Chờ animation vung tay / ra đòn
         yield return new WaitForSeconds(0.25f);
@@ -21,11 +19,6 @@ public class SkillController
             ultimateSkill.Cast(caster, target);
             // trừ mana 
             caster.Hud.UseMana(caster.Hud.currentMana);
-        }
-        else if (normalSkill != null)
-        {
-            Debug.Log($"{caster.Stats.baseStats.characterName} uses normal skill: {normalSkill.skillName}");
-            normalSkill.Cast(caster, target);
         }
     }
 }

@@ -19,10 +19,11 @@ MonoBehaviour:
   characterPrefab: {fileID: 3222167648754355912, guid: 6a1158b8c77e74152951cddb6f1d77de, type: 3}
   rare:
     rarity: 4
-  maxHealth: 100
+  maxHealth: 120
   maxMana: 100
-  attack: 50
-  defense: 5
+  ManaBonus: 0
+  attack: 20
+  defense: 15
   Speed: 3.5
   CriticalRate: 0
   CriticalDamage: 0

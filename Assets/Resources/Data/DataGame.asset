@@ -20,7 +20,8 @@ MonoBehaviour:
   - realm: 1
     characterBaseStats: []
   - realm: 2
-    characterBaseStats: []
+    characterBaseStats:
+    - {fileID: 11400000, guid: 74ea457f94ebad0438a2eacec2d18a05, type: 2}
   - realm: 3
     characterBaseStats:
     - {fileID: 11400000, guid: 2870f6b056d523d48b2c5cc154200bdb, type: 2}

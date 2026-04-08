@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9aa2544a0d9ae1b429fc2d4bd237b055, type: 3}
-  m_Name: Ather
+  m_Name: Atus
   m_EditorClassIdentifier: 
-  realm: 0
-  characterID: char_001
-  characterName: Ather
-  characterIcon: {fileID: 21300000, guid: 9b2ed0fbe0501554883b04149b779423, type: 3}
-  characterPrefab: {fileID: 7161250531022830628, guid: eea860af4a2d0e940bb2c59234afe3d1, type: 3}
+  realm: 2
+  characterID: char_004
+  characterName: Atus
+  characterIcon: {fileID: 21300000, guid: 5fd90e4ce0e07a24fac4fba65bea3324, type: 3}
+  characterPrefab: {fileID: 1382782348239096657, guid: 6c4d025f7cfa84371b946fd4062d48a9, type: 3}
   rare:
-    rarity: 4
-  maxHealth: 90
+    rarity: 2
+  maxHealth: 60
   maxMana: 100
   ManaBonus: 0
-  attack: 50
+  attack: 8
   defense: 5
-  Speed: 3.5
+  Speed: 3
   CriticalRate: 0
   CriticalDamage: 0
   attackType: 0

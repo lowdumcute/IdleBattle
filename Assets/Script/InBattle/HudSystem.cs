@@ -12,6 +12,7 @@ public class HudSystem : NetworkBehaviour
     [Header("UI")]
     public Image healthFill;
     public Image manaFill;
+    public GameObject HUDBar; // chứa health + mana bar
     [Header("Color")]
     public Color friendlyColor = Color.green;
     public Color enemyColor = Color.red;
@@ -20,14 +21,16 @@ public class HudSystem : NetworkBehaviour
 
     [Networked] public TypeTeam typeTeam {get; set;}
     private TypeTeam lastTeam = TypeTeam.none;
-    public bool isDead;
+    [Networked] public NetworkBool isDead { get; set; }
 
     // NETWORKED DATA
     [Networked] public float maxHealth { get; set; }
     [Networked] public float maxMana { get; set; }
     [Networked] public float currentHealth { get; set; }
     [Networked] public float currentMana { get; set; }
-
+    [Networked] private NetworkBool damagedFlag { get; set; }
+    [Networked] private NetworkBool deathFlag { get; set; }
+    private Animator anim;
 
 
     public override void Spawned()
@@ -48,6 +51,27 @@ public class HudSystem : NetworkBehaviour
             currentMana = maxMana;
         }
         UpdateDirection();
+        anim = GetComponent<Animator>();
+    }
+    public override void Render()
+    {
+        if (anim == null) return;
+
+        if (damagedFlag)
+        {
+            anim.SetTrigger("Damaged");
+
+            if (Object.HasStateAuthority)
+                damagedFlag = false;
+        }
+
+        if (deathFlag)
+        {
+            anim.SetTrigger("Death");
+            HUDBar.SetActive(false);
+            if (Object.HasStateAuthority)
+                deathFlag = false; 
+        }
     }
     public void Update()
     {
@@ -109,9 +133,8 @@ public class HudSystem : NetworkBehaviour
     }
     void UpdateDirection()
     {
-        if (owner == null) return;
 
-        var rect = owner.GetComponent<RectTransform>();
+        var rect = GetComponent<Transform>();
         if (rect == null) return;
 
         Vector3 scale = rect.localScale;
@@ -132,6 +155,8 @@ public class HudSystem : NetworkBehaviour
 
         currentHealth -= dmg;
         currentHealth = Mathf.Max(currentHealth, 0);
+
+        damagedFlag = true; // sync cho client
 
         if (currentHealth <= 0)
         {
@@ -176,6 +201,7 @@ public class HudSystem : NetworkBehaviour
 
         isDead = true;
 
-        gameObject.SetActive(false);
+        deathFlag = true; // sync animation
+
     }
 }

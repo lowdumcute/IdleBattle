@@ -8,6 +8,7 @@ public class BattleManager : NetworkBehaviour
     public static BattleManager Instance;
 
     [Header("Spawn Points")]
+    
     public List<InfoSpawn> PlayerSpawnPoints;
     public List<InfoSpawn> EnemySpawnPoints;
     [Header("info Round")]
